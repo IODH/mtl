@@ -1,10 +1,10 @@
 function replaceFrom(str) {
 	return str
-		.replaceAll('Ӓ̄', 'Ая')
-		.replaceAll('ӓ̄', 'ая')
+		.replaceAll(/[Ӓ̄Ӛ̄]/gu, 'Ая')
+		.replaceAll(/[ӓ̄ӛ̄]/gu, 'ая')
 
-		.replaceAll('Ё̄', 'Еє')
-		.replaceAll('ё̄', 'еє')
+		.replaceAll(/[Ё̄Ъ̈̄]/gu, 'Еє')
+		.replaceAll(/[ё̄ъ̈̄]/gu, 'еє')
 
 		.replaceAll('Ӱ̄', 'Ую')
 		.replaceAll('ӱ̄', 'ую')
@@ -12,78 +12,46 @@ function replaceFrom(str) {
 		.replaceAll('Ӧ̄', 'Ойо')
 		.replaceAll('ӧ̄', 'Ойо')
 
-		.replaceAll('Ӓъ', 'Ай')
-		.replaceAll('ӓъ', 'ай')
+		.replaceAll(/(Ӓъ|Ӓ)/gu, 'Ай')
+		.replaceAll(/(ӓъ|ӓ)/gu, 'ай')
 
-		.replaceAll('Ӓ', 'Ай')
-		.replaceAll('ӓ', 'ай')
+		.replaceAll(/(Ӱъ|Ӱ)/gu, 'Уй')
+		.replaceAll(/(ӱъ|ӱ)/gu, 'уй')
 
-		.replaceAll('Ӱъ', 'Уй')
-		.replaceAll('ӱъ', 'уй')
+		.replaceAll(/(Ёъ|Ё|Ӭ)/gu, 'Ей')
+		.replaceAll(/(ёъ|ё|ӭ)/gu, 'ей')
 
-		.replaceAll('Ӱ', 'Уй')
-		.replaceAll('ӱ', 'уй')
+		.replaceAll(/(Ӧъ|Ӧ)/gu, 'Ой')
+		.replaceAll(/(ӧъ|ӧ)/gu, 'ой')
 
-		.replaceAll('Ёъ', 'Ей')
-		.replaceAll('ёъ', 'ей')
+		.replaceAll(/(Ю̈ъ|Ю̈)/gu, 'Юй')
+		.replaceAll(/(ю̈ъ|ю̈)/gu, 'юй')
 
-		.replaceAll('Ё', 'Ей')
-		.replaceAll('ё', 'ей')
+		.replaceAll(/(Я̈ъ|Я̈)/gu, 'Яй')
+		.replaceAll(/(я̈ъ|я̈)/gu, 'яй')
 
-		.replaceAll('Ӧъ', 'Ой')
-		.replaceAll('ӧъ', 'ой')
+		.replaceAll(/(Є̈ъ|Є̈)/gu, 'Єй')
+		.replaceAll(/(є̈ъ|є̈)/gu, 'єй')
 
-		.replaceAll('Ӧ', 'Ой')
-		.replaceAll('ӧ', 'ой')
+		.replaceAll(/(ӥъ|ӥ|ӹ)/gu, 'єй')
+		.replaceAll(/(Ӥъ|Ӥ)/gu, 'єй')
 
-		.replaceAll('Ю̈ъ', 'Юй')
-		.replaceAll('ю̈ъ', 'юй')
+		.replaceAll(/(Ҋъ|Ҋ)/gu, 'Ій')
+		.replaceAll(/(ҋъ|ҋ)/gu, 'ій')
 
-		.replaceAll('Ю̈', 'Юй')
-		.replaceAll('ю̈', 'юй')
-
-		.replaceAll('Я̈ъ', 'Яй')
-		.replaceAll('я̈ъ', 'яй')
-
-		.replaceAll('Я̈', 'Яй')
-		.replaceAll('я̈', 'яй')
-
-		.replaceAll('Є̈ъ', 'Єй')
-		.replaceAll('є̈ъ', 'єй')
-
-		.replaceAll('Є̈', 'Єй')
-		.replaceAll('є̈', 'єй')
-
-		.replaceAll('Ӥъ', 'Ий')
-		.replaceAll('ӥъ', 'ий')
-
-		.replaceAll('Ӥ', 'Ий')
-		.replaceAll('ӥ', 'ий')
-
-		.replaceAll(/[ыӹꙑы̄ы̆]/gu, 'и')
-		.replaceAll(/[ЫꙐ]/gu, 'И')
+		.replaceAll('ы̆', 'ив')
+		.replaceAll('ы̄', 'ию')
 
 		.replaceAll('јъ', 'й')
 
 		.replaceAll('ҍ', '')
 		.replaceAll('ꙏ', '')
 
-		.replaceAll('ѣ', 'е')
-		.replaceAll('ꙓ', 'є')
-		.replaceAll('ꙇ', 'і')
-
-		.replaceAll('Ꙓ', 'є')
-		.replaceAll('Ѣ', 'е')
-		.replaceAll('Ꙇ', 'і')
+		.replaceAll('', 'і')
+		.replaceAll('', 'і')
 
 		.replaceAll('Т̓', 'Тх')
 		.replaceAll('т̓', 'тх')
-
-		.replaceAll('Ӛ̄', 'Ая')
-		.replaceAll('ӛ̄', 'ая')
-
-		.replaceAll('Ӛ', 'Я')
-		.replaceAll('ӛ', 'я')
 
 		.replaceAll('Ю̄', 'Юю')
 		.replaceAll('ю̄', 'юю')
@@ -100,32 +68,11 @@ function replaceFrom(str) {
 		.replaceAll('Ꙗ', 'Іа')
 		.replaceAll('ꙗ', 'іа')
 
-		.replaceAll('Ҋъ', 'Ій')
-		.replaceAll('ҋъ', 'ій')
-
-		.replaceAll('Ҋ', 'Ій')
-		.replaceAll('ҋ', 'ій')
-
 		.replaceAll('Ѥ', 'Іє')
 		.replaceAll('ѥ', 'іє')
 
-		.replaceAll('Ѷр', 'Ір')
-		.replaceAll('ѷр', 'ір')
-
 		.replaceAll('Ԙ', 'Яє')
 		.replaceAll('ԙ', 'яє')
-
-		.replaceAll('Ъ̈̄', 'Еє')
-		.replaceAll('ъ̈̄', 'еє')
-
-		.replaceAll('Ъ̄', 'Ее')
-		.replaceAll('ъ̄', 'ее')
-
-		.replaceAll('Ъ̈', 'Є')
-		.replaceAll('ъ̈', 'є')
-
-		.replaceAll('Ъ', 'Е')
-		.replaceAll('ъ', 'е')
 
 		.replaceAll('Ԑ̈', 'Зню')
 		.replaceAll('ԑ̈', 'зню')
@@ -141,12 +88,6 @@ function replaceFrom(str) {
 
 		.replaceAll('Ӕ', 'Ае')
 		.replaceAll('ӕ', 'ае')
-
-		.replaceAll('Ꙉ', 'Дж')
-		.replaceAll('ꙉ', 'дж')
-
-		.replaceAll('Ԫ', 'Дж')
-		.replaceAll('ԫ', 'дж')
 
 		.replaceAll('Ђ', 'Д')
 		.replaceAll('ђ', 'д')
@@ -199,26 +140,8 @@ function replaceFrom(str) {
 		.replaceAll('Ҩ', 'Іо')
 		.replaceAll('ҩ', 'іо')
 
-		.replaceAll('Ѧ', 'А')
-		.replaceAll('ѧ', 'а')
-
-		.replaceAll('Ѩ', 'Я')
-		.replaceAll('ѩ', 'я')
-
 		.replaceAll('Ѭ', 'Йо')
 		.replaceAll('ѭ', 'йо')
-
-		.replaceAll('Ѫ', 'О')
-		.replaceAll('ѫ', 'о')
-
-		.replaceAll('Ꙙ', 'Е')
-		.replaceAll('ꙙ', 'е')
-
-		.replaceAll('Ꙝ', 'Є')
-		.replaceAll('ꙝ', 'є')
-
-		.replaceAll('Ꙛ', 'І')
-		.replaceAll('ꙛ', 'і')
 
 		.replaceAll('Ѕ', 'Ст')
 		.replaceAll('ѕ', 'ст')
@@ -241,9 +164,6 @@ function replaceFrom(str) {
 		.replaceAll('Ꚇ', 'Чч')
 		.replaceAll('ꚇ', 'чч')
 
-		.replaceAll('Ѡ', 'О')
-		.replaceAll('ѡ', 'о')
-
 		.replaceAll('Ԗ', 'Рх')
 		.replaceAll('ԗ', 'рх')
 
@@ -253,14 +173,8 @@ function replaceFrom(str) {
 		.replaceAll('Ӭ̄', 'Єє')
 		.replaceAll('ӭ̄', 'єє')
 
-		.replaceAll('Ы', 'И')
-		.replaceAll('ы', 'и')
-
 		.replaceAll('Ꙟ', 'Ин')
 		.replaceAll('ꙟ', 'ин')
-
-		.replaceAll('Ә', 'А')
-		.replaceAll('ә', 'а')
 
 		.replaceAll('Ў', 'Ув')
 		.replaceAll('ў', 'ув')
@@ -271,8 +185,11 @@ function replaceFrom(str) {
 		.replaceAll('Ꚏ', 'Цв')
 		.replaceAll('ꚏ', 'цв')
 
-		.replaceAll('Ә̄', 'Аа')
-		.replaceAll('ә̄', 'Аа')
+		.replaceAll(/[Ә̄А̄]/gu, 'Аа')
+		.replaceAll(/[ә̄а̄]/gu, 'аа')
+
+		.replaceAll(/[Е̄Ъ̄]/gu, 'Ее')
+		.replaceAll(/[е̄ъ̄]/gu, 'ее')
 
 		.replaceAll('Џ', 'Зц')
 		.replaceAll('џ', 'зц')
@@ -328,17 +245,29 @@ function replaceFrom(str) {
 		.replaceAll('Ꚑ', 'Тс')
 		.replaceAll('ꚑ', 'тс')
 
-		.replaceAll('Ѵ', 'И')
-		.replaceAll('ѵ', 'и')
+		.replaceAll(/[ꙪꚚѺꙨꙬѠѪꙌѼ]/gu, 'О')
+		.replaceAll(/[ꙫꚛѻꙩꙭѡѫꙍѽ]/gu, 'о')
 
-		.replaceAll('ꙫ', 'о')
-		.replaceAll('ꙫ', 'о')
+		.replaceAll(/[ѨӚ]/gu, 'А')
+		.replaceAll(/[ѩӛ]/gu, 'а')
 
-		.replaceAll('Ꙫ', 'О')
-		.replaceAll('ꙫ', 'о')
+		.replaceAll(/[ѦӘ]/gu, 'А')
+		.replaceAll(/[ѧә]/gu, 'а')
 
-		.replaceAll('Ꚛ', 'О')
-		.replaceAll('ꚛ', 'о')
+		.replaceAll(/[ѢꙘЪ]/gu, 'Е')
+		.replaceAll(/[ѣꙙъ]/gu, 'е')
+
+		.replaceAll(/[ꙒꙜЪ̈]/gu, 'Є')
+		.replaceAll(/[ꙓꙝъ̈]/gu, 'є')
+
+		.replaceAll(/[ꙚꙆѶ]/gu, 'І')
+		.replaceAll(/[ꙛꙇѷ]/gu, 'і')
+
+		.replaceAll(/[ѴЫꙐ]/gu, 'И')
+		.replaceAll(/[ѵыꙑ]/gu, 'и')
+
+		.replaceAll(/[ꙈԪ]/gu, 'Дж')
+		.replaceAll(/[ꙉԫ]/gu, 'дж')
 
 		.replaceAll('Багтꙮ', 'Багато')
 		.replaceAll('багтꙮ', 'багато')
@@ -346,32 +275,17 @@ function replaceFrom(str) {
 		.replaceAll('Мнꙮг', 'Много')
 		.replaceAll('мнꙮг', 'много')
 
-		.replaceAll('Ѻ', 'О')
-		.replaceAll('ѻ', 'о')
-
-		.replaceAll('Ꙩ', 'О')
-		.replaceAll('ꙩ', 'о')
-
-		.replaceAll('Ꙭ', 'о')
-		.replaceAll('ꙭ', 'о')
-
 		.replaceAll('Ꚙч', 'Очо')
 		.replaceAll('ꚙч', 'очо')
 
 		.replaceAll('Ꙕ', 'Оі')
 		.replaceAll('ꙕ', 'оі')
 
-		.replaceAll('А̄', 'Аа')
-		.replaceAll('а̄', 'аа')
-
 		.replaceAll('О̄', 'Оо')
 		.replaceAll('о̄', 'оо')
 
 		.replaceAll('Ў', 'Уу')
 		.replaceAll('ӯ', 'уу')
-
-		.replaceAll('Е̄', 'Ее')
-		.replaceAll('е̄', 'ее')
 
 		.replaceAll('Ӣ', 'Ии')
 		.replaceAll('ӣ', 'ии')
@@ -400,20 +314,20 @@ function replaceFrom(str) {
 		.replaceAll('Ц̈', 'Цю')
 		.replaceAll('ц̈', 'цю')
 
-		.replaceAll('Ӭ', 'Ей')
-		.replaceAll('ӭ', 'ей')
+		.replaceAll('Ҿ', 'Чк')
+		.replaceAll('ҿ', 'чк')
 
-		.replaceAll('Ҽ', 'Чк')
-		.replaceAll('ҽ', 'чк')
+		.replaceAll('Ҽ', 'Вч')
+		.replaceAll('ҽ', 'вч')
 
-		.replaceAll('Ҿ', 'Че')
-		.replaceAll('ҿ', 'че')
+		.replaceAll('Ҽ̆', 'Чв')
+		.replaceAll('ҽ̆', 'чв')
 
 		.replaceAll('Ӡ', 'Зб')
 		.replaceAll('ӡ', 'зб')
 
-		.replaceAll('О̆', 'Ов')
-		.replaceAll('о̆', 'ов')
+		.replaceAll('О̆', 'Ое')
+		.replaceAll('о̆', 'ое')
 
 		.replaceAll('А̊', 'Ао')
 		.replaceAll('а̊', 'ао')
@@ -448,8 +362,8 @@ function replaceFrom(str) {
 		.replaceAll('Ҟ', 'Кл')
 		.replaceAll('ҟ', 'кл')
 
-		.replaceAll('Ӄ', 'Кб')
-		.replaceAll('Ӄ', 'Кб')
+		.replaceAll('Ӄ', 'Кт')
+		.replaceAll('ӄ', 'кт')
 
 		.replaceAll('Ү', 'Уе')
 		.replaceAll('ү', 'уе')
@@ -466,8 +380,6 @@ function replaceFrom(str) {
 		.replaceAll('Ԩ', 'Чн')
 		.replaceAll('ԩ', 'чн')
 
-		.replaceAll('ӹ', 'ию')
-
 		.replaceAll('Ԝ', 'Вл')
 		.replaceAll('ԝ', 'вл')
 
@@ -476,12 +388,6 @@ function replaceFrom(str) {
 
 		.replaceAll('Ӿ', 'Хж')
 		.replaceAll('ӿ', 'хж')
-
-		.replaceAll('Ꙍ', 'О')
-		.replaceAll('ꙍ', 'о')
-
-		.replaceAll('Ѽ', 'о')
-		.replaceAll('ѽ', 'о')
 
 		.replaceAll('Љӏ', 'Льо')
 		.replaceAll('љӏ', 'льо')
@@ -590,8 +496,8 @@ function replaceFrom(str) {
 		.replaceAll(/ԏ[яюєі]/gu, (m) => 'т' + m[1])
 		.replaceAll(/Ԍ[яюєі]/gu, (m) => 'С' + m[1])
 		.replaceAll(/ԍ[яюєі]/gu, (m) => 'с' + m[1])
-		.replaceAll(/Ԃ[яюєі]/gu, (m) => 'Д' + m[1])
-		.replaceAll(/ԃ[яюєі]/gu, (m) => 'д' + m[1])
+		.replaceAll(/Ԃ[яє]/gu, (m) => 'Д' + m[1])
+		.replaceAll(/ԃ[яє]/gu, (m) => 'д' + m[1])
 		.replaceAll(/Ԉ[яюєі]/gu, (m) => 'Л' + m[1])
 		.replaceAll(/ԉ[яюєі]/gu, (m) => 'л' + m[1])
 		.replaceAll(/Ԋ[яюєі]/gu, (m) => 'Н' + m[1])
@@ -619,16 +525,13 @@ function replaceFrom(str) {
 		.replaceAll('ˮ', '')
 
 		.replaceAll('Љ', 'Ль')
-		.replaceAll('љ', 'ль')
-		.replaceAll('ԉ', 'ль')
+		.replaceAll(/[ԉљ]/, 'ль')
 
 		.replaceAll('Њ', 'Нь')
-		.replaceAll('њ', 'нь')
-		.replaceAll('ԋ', 'нь')
+		.replaceAll(/[ԋњ]/, 'нь')
 
 		.replaceAll('Ᲊ', 'Ть')
-		.replaceAll('ᲊ', 'ть')
-		.replaceAll('ԏ', 'ть')
+		.replaceAll(/[ԏᲊ]/, 'ть')
 
 		.replaceAll('Ԍ', 'Сь')
 		.replaceAll('ԍ', 'сь')

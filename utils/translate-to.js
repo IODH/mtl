@@ -421,11 +421,14 @@ function replaceTo(str) {
 		.replaceAll('Ей', 'Ё')
 		.replaceAll('ей', 'ё')
 
-		.replaceAll('Че', 'Ҿ')
-		.replaceAll('че', 'ҿ')
+		.replaceAll('Чк', 'Ҿ')
+		.replaceAll('чк', 'ҿ')
 
-		.replaceAll('Чк', 'Ҽ')
-		.replaceAll('чк', 'ҽ')
+		.replaceAll('Вч', 'Ҽ')
+		.replaceAll('вч', 'ҽ')
+
+		.replaceAll('Чв', 'Ҽ̆')
+		.replaceAll('чв', 'ҽ̆')
 
 		.replaceAll('Зб', 'Ӡ')
 		.replaceAll('зб', 'ӡ')
@@ -439,8 +442,8 @@ function replaceTo(str) {
 		.replaceAll('Яя', 'Я̄')
 		.replaceAll('яя', 'я̄')
 
-		.replaceAll('Ов', 'О̆')
-		.replaceAll('ов', 'о̆')
+		.replaceAll('Ое', 'О̆')
+		.replaceAll('ое', 'о̆')
 
 		.replaceAll('Ює', 'Ӫ')
 		.replaceAll('ює', 'ӫ')
@@ -493,8 +496,8 @@ function replaceTo(str) {
 		.replaceAll('Кл', 'Ҟ')
 		.replaceAll('кл', 'ҟ')
 
-		.replaceAll('Кб', 'Ӄ')
-		.replaceAll('Кб', 'Ӄ')
+		.replaceAll('Кт', 'Ӄ')
+		.replaceAll('кт', 'ӄ')
 
 		.replaceAll('Уе', 'Ү')
 		.replaceAll('уе', 'ү')
