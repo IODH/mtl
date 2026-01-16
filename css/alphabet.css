@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'NotoSansSpecial';
+	src: url('../font/NotoSans-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Charis7000;
+	src: url('../font/Charis-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: NotoSansGeorgian;
+	src: url('../font/NotoSerifGeorgian.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	font-family: 'Charis7000';
+}
+
+.noto {
+	font-family: 'NotoSansSpecial';
+}
+
+.cil {
+	font-family: 'NotoSansGeorgian';
+}
+
+h1 {
+	text-align: center;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+}
