@@ -7,14 +7,14 @@ function replaceTo(str) {
 		.replaceAll('Ае', 'Ӕ')
 		.replaceAll('ае', 'ӕ')
 
-		.replaceAll('Дж', 'Ԫ')
-		.replaceAll('дж', 'ԫ')
-
 		.replaceAll('Джмҍі', 'Ꙉмҍі')
 		.replaceAll('джмҍі', 'ꙉмҍі')
 
 		.replaceAll(/Джҍ[іяює]/gu, (m) => 'Ꙉ' + m[3])
 		.replaceAll(/джҍ[іяює]/gu, (m) => 'ꙉ' + m[3])
+
+		.replaceAll('Дж', 'Ԫ')
+		.replaceAll('дж', 'ԫ')
 
 		.replaceAll('Дзе', 'Ꙃ')
 		.replaceAll('дзе', 'ꙃ')
