@@ -7,17 +7,14 @@ function replaceTo(str) {
 		.replaceAll('Ае', 'Ӕ')
 		.replaceAll('ае', 'ӕ')
 
-		.replaceAll('Дже', 'Ꙉ')
-		.replaceAll('дже', 'ꙉ')
-
 		.replaceAll('Дж', 'Ԫ')
 		.replaceAll('дж', 'ԫ')
 
-		.replaceAll('Джмҍі', 'Ђмҍі')
-		.replaceAll('джмҍі', 'ђмҍі')
+		.replaceAll('Джмҍі', 'Ꙉмҍі')
+		.replaceAll('джмҍі', 'ꙉмҍі')
 
-		.replaceAll(/Джҍ[іяює]/gu, (m) => 'Ђ' + m[3])
-		.replaceAll(/джҍ[іяює]/gu, (m) => 'ђ ' + m[3])
+		.replaceAll(/Джҍ[іяює]/gu, (m) => 'Ꙉ' + m[3])
+		.replaceAll(/джҍ[іяює]/gu, (m) => 'ꙉ' + m[3])
 
 		.replaceAll('Дзе', 'Ꙃ')
 		.replaceAll('дзе', 'ꙃ')
@@ -79,8 +76,8 @@ function replaceTo(str) {
 
 		.replaceAll('ьо', 'ӏ')
 
-		.replaceAll('Да', 'Ԁ')
-		.replaceAll('да', 'ԁ')
+		.replaceAll('Дн', 'Ԁ')
+		.replaceAll('дн', 'ԁ')
 
 		.replaceAll(/ь[яюєї]/gu, (m) => 'ьˮ' + m[1])
 		.replaceAll('Жҍю', 'Ӝ')
@@ -118,8 +115,11 @@ function replaceTo(str) {
 		.replaceAll(/Н[іяює]/gu, (m) => 'Ԋ' + m[1])
 		.replaceAll(/н[іяює]/gu, (m) => 'ԋ' + m[1])
 
-		.replaceAll(/Д[іяює]/gu, (m) => 'Ԃ' + m[1])
-		.replaceAll(/д[іяює]/gu, (m) => 'ԃ' + m[1])
+		.replaceAll(/Д[яє]/gu, (m) => 'Ԃ' + m[1])
+		.replaceAll(/д[яє]/gu, (m) => 'ԃ' + m[1])
+
+		.replaceAll('Ді', 'Ђі')
+		.replaceAll('ді', 'ђі')
 
 		.replaceAll(/З[іяює]/gu, (m) => 'Ԅ' + m[1])
 		.replaceAll(/з[іяює]/gu, (m) => 'ԅ' + m[1])
@@ -196,8 +196,8 @@ function replaceTo(str) {
 		.replaceAll('Лх', 'Ԕ')
 		.replaceAll('лх', 'ԕ')
 
-		.replaceAll('Де', 'Δе')
-		.replaceAll('де', 'δе')
+		.replaceAll('Др', 'Δ')
+		.replaceAll('др', 'δ')
 
 		.replaceAll('Еєр', 'Ъ̈̄р')
 		.replaceAll('еєр', 'ъ̈̄р')
@@ -469,17 +469,14 @@ function replaceTo(str) {
 		.replaceAll('Гн', 'Ғ')
 		.replaceAll('гн', 'ғ')
 
-		.replaceAll('Гол', 'Ҕол')
-		.replaceAll('гол', 'ҕол')
-
 		.replaceAll('Гл', 'Ғ̌')
 		.replaceAll('гл', 'ғ̌')
 
-		.replaceAll('Вг', 'Г̑')
-		.replaceAll('вг', 'г̑')
+		.replaceAll('Вг', 'Ӷ')
+		.replaceAll('вг', 'ӷ')
 
-		.replaceAll('Гв', 'Г̆')
-		.replaceAll('гв', 'г̆')
+		.replaceAll('Гв', 'Ҕ')
+		.replaceAll('гв', 'ҕ')
 
 		.replaceAll('Кр', 'Ԟ')
 		.replaceAll('кр', 'ԟ')
@@ -560,9 +557,6 @@ function replaceTo(str) {
 
 		.replaceAll('Кх', 'Қ')
 		.replaceAll('кх', 'қ')
-
-		.replaceAll('Га', 'Ӷа')
-		.replaceAll('га', 'ӷа')
 
 		.replaceAll('Жр', 'Җ')
 		.replaceAll('жр', 'җ')
