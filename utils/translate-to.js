@@ -7,8 +7,8 @@ function replaceTo(str) {
 		.replaceAll('Ае', 'Ӕ')
 		.replaceAll('ае', 'ӕ')
 
-		.replaceAll('Джмҍі', 'Ꙉмҍі')
-		.replaceAll('джмҍі', 'ꙉмҍі')
+		.replaceAll('Джмі', 'Ꙉмҍі')
+		.replaceAll('джмі', 'ꙉмҍі')
 
 		.replaceAll(/Джҍ[іяює]/gu, (m) => 'Ꙉ' + m[3])
 		.replaceAll(/джҍ[іяює]/gu, (m) => 'ꙉ' + m[3])
