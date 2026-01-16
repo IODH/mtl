@@ -436,9 +436,6 @@ function replaceTo(str) {
 		.replaceAll('Юю', 'Ю̄')
 		.replaceAll('юю', 'ю̄')
 
-		.replaceAll('Юв', 'Ю̆')
-		.replaceAll('юв', 'ю̆')
-
 		.replaceAll('Яя', 'Я̄')
 		.replaceAll('яя', 'я̄')
 
@@ -617,6 +614,9 @@ function replaceTo(str) {
 
 		.replaceAll('Фл', 'Ӆ')
 		.replaceAll('фл', 'ӆ')
+
+		.replaceAll('Юв', 'Ю̆')
+		.replaceAll('юв', 'ю̆')
 
 		.replaceAll('Мр', 'Ӎ')
 		.replaceAll('мр', 'ӎ')
