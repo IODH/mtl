@@ -585,8 +585,8 @@ function replaceTo(str) {
 		.replaceAll('Шх', 'Ԧ')
 		.replaceAll('Шх', 'ԧ')
 
-		.replaceAll('Ча', 'Ҷа')
-		.replaceAll('ча', 'ҷа')
+		.replaceAll('Чм', 'Ҷ')
+		.replaceAll('чм', 'ҷ')
 
 		.replaceAll('Ҷаю', 'Ҷ̈а')
 		.replaceAll('ҷаю', 'ҷ̈а')
@@ -653,7 +653,7 @@ function endOfWordTo(str) {
 			// Check that finall letters a need to replace
 			words[i].length >= 2 &&
 			Object.keys(finalSoftLetters).includes(
-				words[i][words[i].length - 2].concat(words[i][words[i].length - 1])
+				words[i][words[i].length - 2].concat(words[i][words[i].length - 1]),
 			)
 		) {
 			const wordArr = words[i].split('');
