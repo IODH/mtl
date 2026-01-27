@@ -627,8 +627,8 @@ function replaceTo(str) {
 		.replaceAll('Хл', 'Ӽ')
 		.replaceAll('хл', 'ӽ')
 
-		.replaceAll('Лц', 'Ԓ')
-		.replaceAll('лц', 'ԓ')
+		.replaceAll('Лк', 'Ԓ')
+		.replaceAll('лк', 'ԓ')
 
 		.replaceAll('Еа', 'Ӗ')
 		.replaceAll('еа', 'ӗ');
