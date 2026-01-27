@@ -41,8 +41,8 @@ function replaceTo(str) {
 		.replaceAll('Тс', 'Ꚑ')
 		.replaceAll('тс', 'ꚑ')
 
-		.replaceAll('Ойо', 'Ӧ̄')
-		.replaceAll('ойо', 'ӧ̄')
+		.replaceAll('Ою', 'Ӧ̄')
+		.replaceAll('ою', 'ӧ̄')
 
 		.replaceAll('Іо', 'Ҩ')
 		.replaceAll('іо', 'ҩ')
