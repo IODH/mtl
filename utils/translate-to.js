@@ -658,7 +658,6 @@ function endOfWordTo(str) {
 		} else if (words[i][words[i].length - 1] === 'й') {
 			const wordArr = words[i].split('');
 
-			wordArr.pop();
 			wordArr.push('ᵸ');
 
 			words[i] = wordArr.join('');
