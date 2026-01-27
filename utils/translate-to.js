@@ -691,7 +691,7 @@ function softLettersEndOfWord(str) {
 	for (let i = 0; i < words.length; i++) {
 		if (
 			words[i].length > 2 &&
-			softLettersDontReplace.includes(words[i][words[i].length - 1])
+			['љ', 'њ', 'ᲊ'].includes(words[i][words[i].length - 1])
 		) {
 			const letters = words[i].split('');
 			const pw = letters.slice(0, words[i].length - 2);
