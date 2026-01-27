@@ -529,13 +529,13 @@ function replaceFrom(str) {
 		.replaceAll('ˮ', '')
 
 		.replaceAll('Љ', 'Ль')
-		.replaceAll(/[ԉљ]/, 'ль')
+		.replaceAll(/[ԉљ]/gu, 'ль')
 
 		.replaceAll('Њ', 'Нь')
-		.replaceAll(/[ԋњ]/, 'нь')
+		.replaceAll(/[ԋњ]/gu, 'нь')
 
 		.replaceAll('Ᲊ', 'Ть')
-		.replaceAll(/[ԏᲊ]/, 'ть')
+		.replaceAll(/[ԏᲊ]/gu, 'ть')
 
 		.replaceAll('Ԍ', 'Сь')
 		.replaceAll('ԍ', 'сь')
