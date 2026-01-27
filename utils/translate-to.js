@@ -89,8 +89,8 @@ function replaceTo(str) {
 		.replaceAll('Кҍю', 'К̈')
 		.replaceAll('кҍю', 'к̈')
 
-		.replaceAll('Тю', 'Т̈')
-		.replaceAll('тю', 'т̈')
+		.replaceAll('Тн', 'Т̈')
+		.replaceAll('тн', 'т̈')
 
 		.replaceAll('Чҍю', 'Ӵ')
 		.replaceAll('чҍю', 'ӵ')
@@ -106,8 +106,8 @@ function replaceTo(str) {
 
 		.replaceAll(/[рцРЦ][іяює]/gu, (m) => m[0] + 'ь' + m[1])
 
-		.replaceAll(/Т[іяє]/gu, (m) => 'Ԏ' + m[1])
-		.replaceAll(/т[іяє]/gu, (m) => 'ԏ' + m[1])
+		.replaceAll(/Т[іюяє]/gu, (m) => 'Ԏ' + m[1])
+		.replaceAll(/т[іюяє]/gu, (m) => 'ԏ' + m[1])
 
 		.replaceAll(/Л[іяює]/gu, (m) => 'Ԉ' + m[1])
 		.replaceAll(/л[іяює]/gu, (m) => 'ԉ' + m[1])
@@ -451,11 +451,14 @@ function replaceTo(str) {
 		.replaceAll('Тх', 'Т̓')
 		.replaceAll('тх', 'т̓')
 
+		.replaceAll('Рк', 'Р̌')
+		.replaceAll('рк', 'р̌')
+
 		.replaceAll(/дд|тт|зз|сс|цц|лл|нн|жж|шш|рр|вв|кк/gu, (m) => m[0] + '̄')
 		.replaceAll(/Дд|Тт|Зз|Сс|Цц|Лл|Нн|Жж|Шш|Рр|Вв|Кк/gu, (m) => m[0] + '̄')
 
-		.replaceAll(/Зв|Зг|Зд|Зр|Зс|Зт|Зх/gu, (m) => m[1].toUpperCase() + '̌')
-		.replaceAll(/зв|зг|зд|зр|зс|зт|зх/gu, (m) => m[1] + '̌')
+		.replaceAll(/Зв|Зг|Зд|Зс|Зт|Зх/gu, (m) => m[1].toUpperCase() + '̌')
+		.replaceAll(/зв|зг|зд|зс|зт|зх/gu, (m) => m[1] + '̌')
 
 		.replaceAll('Ао', 'А̊')
 		.replaceAll('ао', 'а̊')
@@ -582,8 +585,8 @@ function replaceTo(str) {
 		.replaceAll('Хт', 'Ҳ')
 		.replaceAll('хт', 'ҳ')
 
-		.replaceAll('Шх', 'Ԧ')
-		.replaceAll('Шх', 'ԧ')
+		.replaceAll('Хм', 'Ԧ')
+		.replaceAll('хм', 'ԧ')
 
 		.replaceAll('Чм', 'Ҷ')
 		.replaceAll('чм', 'ҷ')
@@ -591,8 +594,8 @@ function replaceTo(str) {
 		.replaceAll('Ҷаю', 'Ҷ̈а')
 		.replaceAll('ҷаю', 'ҷ̈а')
 
-		.replaceAll('Ач', 'Ӌ')
-		.replaceAll('ач', 'ӌ')
+		.replaceAll('Мч', 'Ӌ')
+		.replaceAll('мч', 'ӌ')
 
 		.replaceAll('Ч̣', 'Чх')
 		.replaceAll('ч̣', 'чх')
@@ -631,7 +634,10 @@ function replaceTo(str) {
 		.replaceAll('лк', 'ԓ')
 
 		.replaceAll('Еа', 'Ӗ')
-		.replaceAll('еа', 'ӗ');
+		.replaceAll('еа', 'ӗ')
+
+		.replaceAll('Гх', 'Ղ')
+		.replaceAll('гх', 'ղ');
 }
 
 function endOfWordTo(str) {
