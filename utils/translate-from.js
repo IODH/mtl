@@ -1,5 +1,5 @@
 function replaceFrom(str) {
-	const res = str;
+	let res = str;
 	res = res.replaceAll(/[Ӓ̄Ӛ̄]/gu, 'Ая');
 	res = res.replaceAll(/[ӓ̄ӛ̄]/gu, 'ая');
 
