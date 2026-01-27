@@ -674,8 +674,7 @@ function endOfWordTo(str) {
 			const wordArr = words[i].split('');
 
 			wordArr.pop();
-			wordArr.push('ј');
-			wordArr.push('ъ');
+			wordArr.push('ᵸ');
 
 			words[i] = wordArr.join('');
 		}

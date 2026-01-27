@@ -44,6 +44,10 @@ export const consonantLetters = [
 	'ꙟ',
 ];
 
+
+/*
+  deprecated
+*/
 export const finalSoftLetters = {
 	дь: 'ԃ',
 	зь: 'ԅ',

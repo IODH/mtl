@@ -12,40 +12,37 @@ function replaceFrom(str) {
 		.replaceAll('Ӧ̄', 'Ойо')
 		.replaceAll('ӧ̄', 'Ойо')
 
-		.replaceAll(/(Ӓъ|Ӓ)/gu, 'Ай')
-		.replaceAll(/(ӓъ|ӓ)/gu, 'ай')
+		.replaceAll(/(Ё|Ӭ)/gu, 'Ей')
+		.replaceAll(/(ё|ӭ)/gu, 'ей')
 
-		.replaceAll(/(Ӱъ|Ӱ)/gu, 'Уй')
-		.replaceAll(/(ӱъ|ӱ)/gu, 'уй')
+		.replaceAll('Ӓ', 'Ай')
+		.replaceAll('ӓ', 'ай')
 
-		.replaceAll(/(Ёъ|Ё|Ӭ)/gu, 'Ей')
-		.replaceAll(/(ёъ|ё|ӭ)/gu, 'ей')
+		.replaceAll('Ӱ', 'Уй')
+		.replaceAll('ӱ', 'уй')
 
-		.replaceAll(/(Ӧъ|Ӧ)/gu, 'Ой')
-		.replaceAll(/(ӧъ|ӧ)/gu, 'ой')
+		.replaceAll('Ӧ', 'Ой')
+		.replaceAll('ӧ', 'ой')
 
-		.replaceAll(/(Ю̈ъ|Ю̈)/gu, 'Юй')
-		.replaceAll(/(ю̈ъ|ю̈)/gu, 'юй')
+		.replaceAll('Ю̈', 'Юй')
+		.replaceAll('ю̈', 'юй')
 
-		.replaceAll(/(Я̈ъ|Я̈)/gu, 'Яй')
-		.replaceAll(/(я̈ъ|я̈)/gu, 'яй')
+		.replaceAll('Я̈', 'Яй')
+		.replaceAll('я̈', 'яй')
 
-		.replaceAll(/(Є̈ъ|Є̈)/gu, 'Єй')
-		.replaceAll(/(є̈ъ|є̈)/gu, 'єй')
+		.replaceAll('Є̈', 'Єй')
+		.replaceAll('є̈', 'єй')
 
-		.replaceAll(/(ӥъ|ӥ|ӹ)/gu, 'єй')
-		.replaceAll(/(Ӥъ|Ӥ)/gu, 'єй')
+		.replaceAll('Ҋ', 'Ій')
+		.replaceAll('ҋ', 'ій')
 
-		.replaceAll(/(Ҋъ|Ҋ)/gu, 'Ій')
-		.replaceAll(/(ҋъ|ҋ)/gu, 'ій')
+		.replaceAll('Ӥ', 'Ий')
+		.replaceAll(/(ӥ|ӹ)/gu, 'ий')
 
 		.replaceAll('ы̆', 'ив')
 		.replaceAll('ы̄', 'ию')
 
-		.replaceAll('јъ', 'й')
-
-		.replaceAll('ҍ', '')
-		.replaceAll('ꙏ', '')
+		.replaceAll(/[ᵸҍꙏ]/gu, '')
 
 		.replaceAll('Т̓', 'Тх')
 		.replaceAll('т̓', 'тх')
