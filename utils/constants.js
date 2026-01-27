@@ -44,17 +44,8 @@ export const consonantLetters = [
 	'ꙟ',
 ];
 
-
-/*
-  deprecated
-*/
-export const finalSoftLetters = {
-	дь: 'ԃ',
-	зь: 'ԅ',
-	ль: 'ԉ',
-	нь: 'ԋ',
-	сь: 'ԍ',
-	ть: 'ԏ',
-	ць: 'წ',
-	чь: 'ჭ',
+export const softLettersDontReplace = {
+	'ᲊ': 'ть',
+	љ: 'ль',
+	њ: 'нь',
 };

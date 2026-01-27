@@ -523,25 +523,13 @@ function replaceFrom(str) {
 		.replaceAll('ˮ', '')
 
 		.replaceAll('Љ', 'Ль')
-		.replaceAll(/[ԉљ]/gu, 'ль')
+		.replaceAll('љ', 'ль')
 
 		.replaceAll('Њ', 'Нь')
-		.replaceAll(/[ԋњ]/gu, 'нь')
+		.replaceAll('њ', 'нь')
 
 		.replaceAll('Ᲊ', 'Ть')
-		.replaceAll(/[ԏᲊ]/gu, 'ть')
-
-		.replaceAll('Ԍ', 'Сь')
-		.replaceAll('ԍ', 'сь')
-
-		.replaceAll('Ԅ', 'Зь')
-		.replaceAll('ԅ', 'зь')
-
-		.replaceAll('Ԃ', 'Дь')
-		.replaceAll('ԃ', 'дь')
-
-		.replaceAll('წ', 'ць')
-		.replaceAll('ჭ', 'чь');
+		.replaceAll('ᲊ', 'ть');
 }
 
 export function translateFrom(str) {

@@ -1,4 +1,4 @@
-import { consonantLetters, finalSoftLetters } from './constants.js';
+import { consonantLetters, softLettersDontReplace } from './constants.js';
 
 function replaceTo(str) {
 	return str
@@ -655,21 +655,6 @@ function endOfWordTo(str) {
 	for (let i = 0; i < words.length; i++) {
 		if (consonantLetters.includes(words[i][words[i].length - 1])) {
 			words[i] = words[i].concat('ꙏ');
-		} else if (
-			// Check that finall letters a need to replace
-			words[i].length >= 2 &&
-			Object.keys(finalSoftLetters).includes(
-				words[i][words[i].length - 2].concat(words[i][words[i].length - 1]),
-			)
-		) {
-			const wordArr = words[i].split('');
-
-			wordArr.pop();
-			const l = wordArr.pop();
-
-			wordArr.push(finalSoftLetters[`${l}ь`]);
-
-			words[i] = wordArr.join('');
 		} else if (words[i][words[i].length - 1] === 'й') {
 			const wordArr = words[i].split('');
 
@@ -691,7 +676,41 @@ function endOfWordTo(str) {
 		.replaceAll(' - ', '-');
 }
 
+function softLettersEndOfWord(str) {
+	const res = str
+		.replaceAll(',', ' , ')
+		.replaceAll('.', ' . ')
+		.replaceAll('!', ' ! ')
+		.replaceAll('?', ' ? ')
+		.replaceAll(';', ' ; ')
+		.replaceAll(':', ' : ')
+		.replaceAll('-', ' - ');
+
+	const words = res.split(' ');
+
+	for (let i = 0; i < words.length; i++) {
+		if (
+			words[i].length > 2 &&
+			softLettersDontReplace.includes(words[i][words[i].length - 1])
+		) {
+			const letters = words[i].split('');
+			const pw = letters.slice(0, words[i].length - 2);
+
+			words[i] = pw + softLettersDontReplace[letters.at(-1)];
+		}
+	}
+	return words
+		.join(' ')
+		.replaceAll(' , ', ',')
+		.replaceAll(' . ', '.')
+		.replaceAll(' ! ', '!')
+		.replaceAll(' ? ', '?')
+		.replaceAll(' ; ', ';')
+		.replaceAll(' : ', ':')
+		.replaceAll(' - ', '-');
+}
+
 export function translateTo(text) {
-	const res = replaceTo(endOfWordTo(text));
+	const res = softLettersEndOfWord(replaceTo(endOfWordTo(text)));
 	return res;
 }
