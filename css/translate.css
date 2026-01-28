@@ -1,10 +1,10 @@
 @font-face {
-	font-family: MTL;
+	font-family: MLT;
 	src: url('../font/MLT.otf');
 }
 
 * {
-	font-family: MTL;
+	font-family: MLT;
 }
 
 body {

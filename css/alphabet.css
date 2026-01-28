@@ -1,18 +1,10 @@
 @font-face {
-	font-family: MTL;
+	font-family: MLT;
 	src: url('../font/MLT.otf');
 }
 
 * {
-	font-family: MTL;
-}
-
-.noto {
-	font-family: 'NotoSansSpecial';
-}
-
-.cil {
-	font-family: 'NotoSansGeorgian';
+	font-family: MLT;
 }
 
 h1 {
