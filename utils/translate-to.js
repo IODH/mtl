@@ -229,7 +229,7 @@ function replaceTo(str) {
 		.replaceAll(/чҍ[іяє]/gu, (m) => 'ћҍ' + m[2])
 
 		.replaceAll(/[жшЖШ]ив/gu, (m) => m[0] + 'ы̆')
-		.replaceAll(/[жшЖШ]ијъ/gu, (m) => m[0] + 'ӹъ')
+		.replaceAll(/[жшЖШ]ий/gu, (m) => m[0] + 'ӹъ')
 		.replaceAll(/[жшЖШ]ию/gu, (m) => m[0] + 'ы̄')
 
 		.replaceAll(/[жш]и/gu, (m) => m[0] + 'ы')
