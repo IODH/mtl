@@ -18,9 +18,7 @@ submit.addEventListener('click', (e) => {
 			? translateTo(textToTranslate)
 			: translateFrom(textToTranslate);
 
-	translatedTextDiv.innerHTML = text
-		.replaceAll(/(Ꚅ̆|ꚅ̆|Ꚑ|ꚑ|ꙏ|І̵Ꙋ|І̵ꙋ)/gu, (m) => `<span class="noto">${m}</span>`)
-		.replaceAll('წ', '<span class="cil">წ</span>');
+	translatedTextDiv.innerHTML = text;
 });
 
 languageChanger.addEventListener('click', (e) => {
