@@ -49,3 +49,6 @@ export const softLettersDontReplace = {
 	љ: 'ль',
 	њ: 'нь',
 };
+
+export const CAPITAL_CIL = '\uE000';
+export const SMALL_CIL = '\uE001';

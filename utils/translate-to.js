@@ -1,4 +1,9 @@
-import { consonantLetters, softLettersDontReplace } from './constants.js';
+import {
+	CAPITAL_CIL,
+	consonantLetters,
+	SMALL_CIL,
+	softLettersDontReplace,
+} from './constants.js';
 
 function replaceTo(str) {
 	return str
@@ -104,7 +109,10 @@ function replaceTo(str) {
 		.replaceAll('Цю', 'Ц̈')
 		.replaceAll('цю', 'ц̈')
 
-		.replaceAll(/[рцРЦ][іяює]/gu, (m) => m[0] + 'ь' + m[1])
+		.replaceAll(/[рР][іяює]/gu, (m) => m[0] + 'ь' + m[1])
+
+		.replaceAll(/Ц[іюяє]/gu, (m) => CAPITAL_CIL + m[1])
+		.replaceAll(/ц[іюяє]/gu, (m) => SMALL_CIL + m[1])
 
 		.replaceAll(/Т[іюяє]/gu, (m) => 'Ԏ' + m[1])
 		.replaceAll(/т[іюяє]/gu, (m) => 'ԏ' + m[1])
