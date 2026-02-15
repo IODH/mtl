@@ -1,11 +1,4 @@
-import {
-	CAPITAL_CIL,
-	CAPITAL_CIL_WITH_BAR,
-	SMALL_CIL,
-	SMALL_CIL_WITH_BAR,
-	consonantLetters,
-	softLettersDontReplace,
-} from './constants.js';
+import { consonantLetters, softLettersDontReplace } from './constants.js';
 
 function replaceTo(str) {
 	return str
@@ -113,8 +106,8 @@ function replaceTo(str) {
 
 		.replaceAll(/[рР][іяює]/gu, (m) => m[0] + 'ь' + m[1])
 
-		.replaceAll(/Ц[іюяє]/gu, (m) => CAPITAL_CIL + m[1])
-		.replaceAll(/ц[іюяє]/gu, (m) => SMALL_CIL + m[1])
+		.replaceAll(/Ц[іюяє]/gu, (m) => '' + m[1])
+		.replaceAll(/ц[іюяє]/gu, (m) => '' + m[1])
 
 		.replaceAll(/Т[іюяє]/gu, (m) => 'Ԏ' + m[1])
 		.replaceAll(/т[іюяє]/gu, (m) => 'ԏ' + m[1])
@@ -158,8 +151,8 @@ function replaceTo(str) {
 		.replaceAll('Ін', 'Ꙛн')
 		.replaceAll('ін', 'ꙛн')
 
-		.replaceAll('Ць', `${CAPITAL_CIL_WITH_BAR}`)
-		.replaceAll('ць', `${SMALL_CIL_WITH_BAR}`)
+		.replaceAll('Ць', '')
+		.replaceAll('ць', '')
 
 		.replaceAll('Ль', 'Љ')
 		.replaceAll('ль', 'љ')

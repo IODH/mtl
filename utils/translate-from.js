@@ -1,5 +1,3 @@
-import { CAPITAL_CIL_WITH_BAR, SMALL_CIL_WITH_BAR } from './constants';
-
 function replaceFrom(str) {
 	return str
 		.replaceAll(/[Ӓ̄Ӛ̄]/gu, 'Ая')
@@ -511,8 +509,8 @@ function replaceFrom(str) {
 
 		.replaceAll('ˮ', '')
 
-		.replaceAll(CAPITAL_CIL_WITH_BAR, 'Ць')
-		.replaceAll(SMALL_CIL_WITH_BAR, 'ць')
+		.replaceAll('', 'Ць')
+		.replaceAll('', 'ць')
 
 		.replaceAll('Љ', 'Ль')
 		.replaceAll('љ', 'ль')
