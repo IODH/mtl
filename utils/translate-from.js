@@ -472,8 +472,8 @@ function replaceFrom(str) {
 		.replaceAll('Ꚋ', 'Тр')
 		.replaceAll('ꚋ', 'тр')
 
-		.replaceAll('Ӆ', 'Фл')
-		.replaceAll('ӆ', 'фл')
+		.replaceAll('Ӆ', 'Лф')
+		.replaceAll('ӆ', 'лф')
 
 		.replaceAll('Ӎ', 'Мр')
 		.replaceAll('ӎ', 'мр')
