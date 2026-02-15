@@ -623,8 +623,8 @@ function replaceTo(str) {
 		.replaceAll('Тр', 'Ꚋ')
 		.replaceAll('тр', 'ꚋ')
 
-		.replaceAll('Фл', 'Ӆ')
-		.replaceAll('фл', 'ӆ')
+		.replaceAll('Лф', 'Ӆ')
+		.replaceAll('лф', 'ӆ')
 
 		.replaceAll('Юв', 'Ю̆')
 		.replaceAll('юв', 'ю̆')
