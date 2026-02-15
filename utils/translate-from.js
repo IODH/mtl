@@ -1,10 +1,12 @@
+import { CAPITAL_CIL_WITH_BAR, SMALL_CIL_WITH_BAR } from './constants';
+
 function replaceFrom(str) {
 	return str
-		.replaceAll(/(Ӓ̄|Ӛ̄)/gu, 'Ая')
-		.replaceAll(/(ӓ̄|ӛ̄)/gu, 'ая')
+		.replaceAll(/[Ӓ̄Ӛ̄]/gu, 'Ая')
+		.replaceAll(/[ӓ̄ӛ̄]/gu, 'ая')
 
-		.replaceAll(/(Ё̄|Ъ̈̄)/gu, 'Еє')
-		.replaceAll(/(ё̄|ъ̈̄)/gu, 'еє')
+		.replaceAll(/[Ё̄Ъ̈̄]/gu, 'Еє')
+		.replaceAll(/[ё̄ъ̈̄]/gu, 'еє')
 
 		.replaceAll('Ӱ̄', 'Ую')
 		.replaceAll('ӱ̄', 'ую')
@@ -77,11 +79,11 @@ function replaceFrom(str) {
 		.replaceAll(/(Д̈|Ӝ|Ӟ|К̈|Ӵ)/gu, (m) => m[0] + 'ю')
 		.replaceAll(/(д̈|ӝ|ӟ|к̈|ӵ)/gu, (m) => m[0] + 'ю')
 
-		.replaceAll(/(к̄|д̄|т̄|з̄|с̄|л̄|н̄|ж̄|ш̄|р̄|в̄)/gu, (m) => m[0] + m[0])
-		.replaceAll(/(Д̄|Т̄|З̄|С̄|Л̄|Н̄|К̄|Ж̄|Ш̄|Р̄|В̄)/gu, (m) => m[0] + m[0].toLowerCase())
+		.replaceAll(/[к̄д̄т̄з̄с̄л̄н̄ж̄ш̄р̄в̄]/gu, (m) => m[0] + m[0])
+		.replaceAll(/[Д̄Т̄З̄С̄Л̄Н̄К̄Ж̄Ш̄Р̄В̄]/gu, (m) => m[0] + m[0].toLowerCase())
 
-		.replaceAll(/В̌|Г̌|Д̌|С̌|Т̌|Х̌/gu, (m) => 'З' + m[0])
-		.replaceAll(/в̌|г̌|д̌|с̌|т̌|х̌/gu, (m) => 'з' + m[0])
+		.replaceAll(/В̌|Г̌|Д̌|Р̌|С̌|Т̌|Х̌/gu, (m) => 'З' + m[0])
+		.replaceAll(/в̌|г̌|д̌|р̌|с̌|т̌|х̌/gu, (m) => 'з' + m[0])
 
 		.replaceAll('Ӕ', 'Ае')
 		.replaceAll('ӕ', 'ае')
@@ -254,8 +256,8 @@ function replaceFrom(str) {
 		.replaceAll(/[ѢꙘЪ]/gu, 'Е')
 		.replaceAll(/[ѣꙙъ]/gu, 'е')
 
-		.replaceAll(/(Ꙓ|Ꙝ|Ъ̈)/gu, 'Є')
-		.replaceAll(/(ꙓ|ꙝ|ъ̈)/gu, 'є')
+		.replaceAll(/[ꙒꙜЪ̈]/gu, 'Є')
+		.replaceAll(/[ꙓꙝъ̈]/gu, 'є')
 
 		.replaceAll(/[ꙚꙆѶ]/gu, 'І')
 		.replaceAll(/[ꙛꙇѷ]/gu, 'і')
@@ -508,6 +510,9 @@ function replaceFrom(str) {
 		.replaceAll(/[яюєі]/gu, (m) => 'ц' + m[1])
 
 		.replaceAll('ˮ', '')
+
+		.replaceAll(CAPITAL_CIL_WITH_BAR, 'Ць')
+		.replaceAll(SMALL_CIL_WITH_BAR, 'ць')
 
 		.replaceAll('Љ', 'Ль')
 		.replaceAll('љ', 'ль')
