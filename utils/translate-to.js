@@ -71,8 +71,8 @@ function replaceTo(str) {
 		.replaceAll('Дьо', 'Ԁӏ')
 		.replaceAll('дьо', 'ԁӏ')
 
-		.replaceAll('Цьо', `${CAPITAL_CIL_WITH_BAR}ӏ`)
-		.replaceAll('цьо', `${SMALL_CIL_WITH_BAR}ӏ`)
+		.replaceAll('Цьо', `ӏ`)
+		.replaceAll('цьо', `ӏ`)
 
 		.replaceAll('ьо', 'ӏ')
 
