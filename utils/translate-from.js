@@ -202,11 +202,8 @@ function replaceFrom(str) {
 		.replaceAll('Ҹ', 'Чж')
 		.replaceAll('ҹ', 'чж')
 
-		.replaceAll('', 'Чр')
-		.replaceAll('', 'чр')
-
-		.replaceAll(/[Ћ]/, 'Ч')
-		.replaceAll(/[ћ]/, 'ч')
+		.replaceAll(/[Ћ]/, 'Ч')
+		.replaceAll(/[ћ]/, 'ч')
 
 		.replaceAll('Ө', 'Оє')
 		.replaceAll('ө', 'оє')
