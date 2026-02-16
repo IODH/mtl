@@ -74,8 +74,10 @@ function replaceFrom(str) {
 		.replaceAll('т̈', 'Тн')
 		.replaceAll('Т̈', 'тн')
 
-		.replaceAll(/(Д̈|Ӝ|Ӟ|К̈|Ӵ)/gu, (m) => m[0] + 'ю')
-		.replaceAll(/(д̈|ӝ|ӟ|к̈|ӵ)/gu, (m) => m[0] + 'ю')
+		.replaceAll('Ӵ', 'Чл')
+		.replaceAll('ӵ', 'чл')
+		.replaceAll(/(Д̈|Ӝ|Ӟ|К̈)/gu, (m) => m[0] + 'ю')
+		.replaceAll(/(д̈|ӝ|ӟ|к̈)/gu, (m) => m[0] + 'ю')
 
 		.replaceAll(/[к̄д̄т̄з̄с̄л̄н̄ж̄ш̄р̄в̄]/gu, (m) => m[0] + m[0])
 		.replaceAll(/[Д̄Т̄З̄С̄Л̄Н̄К̄Ж̄Ш̄Р̄В̄]/gu, (m) => m[0] + m[0].toLowerCase())
@@ -200,8 +202,11 @@ function replaceFrom(str) {
 		.replaceAll('Ҹ', 'Чж')
 		.replaceAll('ҹ', 'чж')
 
-		.replaceAll('Ћ', 'Ч')
-		.replaceAll('ћ', 'ч')
+		.replaceAll('', 'Чр')
+		.replaceAll('', 'чр')
+
+		.replaceAll(/[Ћ]/, 'Ч')
+		.replaceAll(/[ћ]/, 'ч')
 
 		.replaceAll('Ө', 'Оє')
 		.replaceAll('ө', 'оє')
@@ -487,8 +492,8 @@ function replaceFrom(str) {
 		.replaceAll('Ԓ', 'Лк')
 		.replaceAll('ԓ', 'лк')
 
-		.replaceAll('Ղ', 'Гх')
-		.replaceAll('ղ', 'гх')
+		.replaceAll('', 'Гх')
+		.replaceAll('', 'гх')
 
 		.replaceAll(/[сзцСЗЦрРДд]ь[яюєі]/gu, (m) => m[0] + m[2])
 

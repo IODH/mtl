@@ -92,8 +92,8 @@ function replaceTo(str) {
 		.replaceAll('Тн', 'Т̈')
 		.replaceAll('тн', 'т̈')
 
-		.replaceAll('Чҍю', 'Ӵ')
-		.replaceAll('чҍю', 'ӵ')
+		.replaceAll('Чл', 'Ӵ')
+		.replaceAll('чл', 'ӵ')
 
 		.replaceAll('Дю', 'Д̈')
 		.replaceAll('дю', 'д̈')
@@ -223,8 +223,11 @@ function replaceTo(str) {
 		.replaceAll('Ил', 'Ыл')
 		.replaceAll('ил', 'ыл')
 
-		.replaceAll(/Чҍ[іяє]/gu, (m) => 'Ћҍ' + m[2])
-		.replaceAll(/чҍ[іяє]/gu, (m) => 'ћҍ' + m[2])
+		.replaceAll('Чҍі', 'Ћҍі')
+		.replaceAll('чҍі', 'ћҍі')
+
+		.replaceAll(/Ч[яює]/gu, (m) => '' + m[0])
+		.replaceAll(/ч[яює]/gu, (m) => '' + m[0])
 
 		.replaceAll(/[жшЖШ]ив/gu, (m) => m[0] + 'ы̆')
 		.replaceAll(/[жшЖШ]ий/gu, (m) => m[0] + 'ӹъ')
@@ -642,8 +645,11 @@ function replaceTo(str) {
 		.replaceAll('Еа', 'Ӗ')
 		.replaceAll('еа', 'ӗ')
 
-		.replaceAll('Гх', 'Ղ')
-		.replaceAll('гх', 'ղ');
+		.replaceAll('Гх', '')
+		.replaceAll('гх', '')
+
+		.replaceAll('Чр', '')
+		.replaceAll('чр', ' ');
 }
 
 function endOfWordTo(str) {
