@@ -172,8 +172,8 @@ function replaceFrom(str) {
 		.replaceAll('Ӭ̄', 'Єє')
 		.replaceAll('ӭ̄', 'єє')
 
-		.replaceAll('Ꙟ', 'Ин')
-		.replaceAll('ꙟ', 'ин')
+		.replaceAll('Ꙟ', 'И')
+		.replaceAll('ꙟ', 'и')
 
 		.replaceAll('Ў', 'Ув')
 		.replaceAll('ў', 'ув')
