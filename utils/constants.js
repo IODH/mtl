@@ -43,9 +43,3 @@ export const consonantLetters = [
 	'џ',
 	'ꙟ',
 ];
-
-export const softLettersDontReplace = {
-	'ᲊ': 'ть',
-	љ: 'ль',
-	њ: 'нь',
-};

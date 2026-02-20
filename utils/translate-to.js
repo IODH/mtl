@@ -1,4 +1,4 @@
-import { consonantLetters, softLettersDontReplace } from './constants.js';
+import { consonantLetters } from './constants.js';
 
 function replaceTo(str) {
 	return str
@@ -687,41 +687,8 @@ function endOfWordTo(str) {
 		.replaceAll(' - ', '-');
 }
 
-function softLettersEndOfWord(str) {
-	const res = str
-		.replaceAll(',', ' , ')
-		.replaceAll('.', ' . ')
-		.replaceAll('!', ' ! ')
-		.replaceAll('?', ' ? ')
-		.replaceAll(';', ' ; ')
-		.replaceAll(':', ' : ')
-		.replaceAll('-', ' - ');
-
-	const words = res.split(' ');
-
-	for (let i = 0; i < words.length; i++) {
-		if (
-			words[i].length > 2 &&
-			['љ', 'њ', 'ᲊ'].includes(words[i][words[i].length - 1])
-		) {
-			const letters = words[i].split('');
-			const fl = letters.pop();
-			letters.push(softLettersDontReplace[fl]);
-			words[i] = letters.join('');
-		}
-	}
-	return words
-		.join(' ')
-		.replaceAll(' , ', ',')
-		.replaceAll(' . ', '.')
-		.replaceAll(' ! ', '!')
-		.replaceAll(' ? ', '?')
-		.replaceAll(' ; ', ';')
-		.replaceAll(' : ', ':')
-		.replaceAll(' - ', '-');
-}
 
 export function translateTo(text) {
-	const res = softLettersEndOfWord(replaceTo(endOfWordTo(text)));
+	const res = replaceTo(endOfWordTo(text))
 	return res;
 }
