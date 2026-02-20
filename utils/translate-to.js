@@ -277,8 +277,8 @@ function replaceTo(str) {
 		.replaceAll('Ть', 'Ᲊ')
 		.replaceAll('ть', 'ᲊ')
 
-		.replaceAll('Ин', 'Ꙟ')
-		.replaceAll('ин', 'ꙟ')
+		.replaceAll('Ин', 'Ꙟн')
+		.replaceAll('ин', 'ꙟн')
 
 		.replaceAll('Шв', 'Ꚗ')
 		.replaceAll('шв', 'ꚗ')
