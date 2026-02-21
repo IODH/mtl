@@ -444,8 +444,8 @@ function replaceFrom(str) {
 		.replaceAll('Ҳ', 'Хт')
 		.replaceAll('ҳ', 'хт')
 
-		.replaceAll('Ԧ', 'Хм')
-		.replaceAll('ԧ', 'хм')
+		.replaceAll('Ԧ', 'Хш')
+		.replaceAll('ԧ', 'хш')
 
 		.replaceAll('Ҷ̈а', 'чаю')
 		.replaceAll('ҷ̈а', 'чаю')
