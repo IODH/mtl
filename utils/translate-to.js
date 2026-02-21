@@ -115,8 +115,11 @@ function replaceTo(str) {
 		.replaceAll(/Т[іюяє]/gu, (m) => 'Ԏ' + m[1])
 		.replaceAll(/т[іюяє]/gu, (m) => 'ԏ' + m[1])
 
-		.replaceAll(/Л[іяює]/gu, (m) => 'Ԉ' + m[1])
-		.replaceAll(/л[іяює]/gu, (m) => 'ԉ' + m[1])
+		.replaceAll(/Л[яює]/gu, (m) => 'Ԉ' + m[1])
+		.replaceAll(/л[яює]/gu, (m) => 'ԉ' + m[1])
+		
+    .replaceAll('Лі','і')
+		.replaceAll('лі','і')
 
 		.replaceAll(/Н[іяює]/gu, (m) => 'Ԋ' + m[1])
 		.replaceAll(/н[іяює]/gu, (m) => 'ԋ' + m[1])
@@ -649,7 +652,13 @@ function replaceTo(str) {
 		.replaceAll('еа', 'ӗ')
 
 		.replaceAll('Гх', '')
-		.replaceAll('гх', '');
+		.replaceAll('гх', '')
+
+		.replaceAll('Хн', '')
+		.replaceAll('хн', '')
+
+		.replaceAll('Хс', '')
+		.replaceAll('хс', '');
 }
 
 function endOfWordTo(str) {
@@ -687,8 +696,7 @@ function endOfWordTo(str) {
 		.replaceAll(' - ', '-');
 }
 
-
 export function translateTo(text) {
-	const res = replaceTo(endOfWordTo(text))
+	const res = replaceTo(endOfWordTo(text));
 	return res;
 }
