@@ -169,6 +169,9 @@ function replaceTo(str) {
 		.replaceAll('Нь', 'Њ')
 		.replaceAll('нь', 'њ')
 
+		.replaceAll('Хс', '')
+		.replaceAll('хс', '')
+
 		.replaceAll('Ст', 'Ѕ')
 		.replaceAll('ст', 'ѕ')
 
@@ -656,10 +659,7 @@ function replaceTo(str) {
 		.replaceAll('гх', '')
 
 		.replaceAll('Хн', '')
-		.replaceAll('хн', '')
-
-		.replaceAll('Хс', '')
-		.replaceAll('хс', '');
+		.replaceAll('хн', '');
 }
 
 function endOfWordTo(str) {
