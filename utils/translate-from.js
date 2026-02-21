@@ -244,8 +244,8 @@ function replaceFrom(str) {
 		.replaceAll('Ꚍ', 'Тв')
 		.replaceAll('ꚍ', 'тв')
 
-		.replaceAll('Ꚁ', 'Дв')
-		.replaceAll('ꚁ', 'дв')
+		.replaceAll(/[Ꚁ]/gu, 'Дв')
+		.replaceAll(/[ꚁ]/gu, 'дв')
 
 		.replaceAll('Ꚑ', 'Тс')
 		.replaceAll('ꚑ', 'тс')
@@ -358,8 +358,11 @@ function replaceFrom(str) {
 		.replaceAll('Ҡ', 'Кн')
 		.replaceAll('ҡ', 'кн')
 
-		.replaceAll('К̆', 'Кв')
-		.replaceAll('к̆', 'кв')
+		.replaceAll('', 'Кв')
+		.replaceAll('', 'кв')
+
+		.replaceAll('К̆', 'Кц')
+		.replaceAll('к̆', 'кц')
 
 		.replaceAll('К̑', 'Вк')
 		.replaceAll('к̑', 'вк')
@@ -406,8 +409,11 @@ function replaceFrom(str) {
 		.replaceAll('Ԁӏ', 'Дьо')
 		.replaceAll('ԁӏ', 'дьо')
 
-		.replaceAll('Ꙡ', 'Ц')
-		.replaceAll('ꙡ', 'ц')
+		.replaceAll('Ꙡ', 'Цн')
+		.replaceAll('ꙡ', 'цн')
+
+		.replaceAll('', 'Цм')
+		.replaceAll('', 'цм')
 
 		.replaceAll('ӏ', 'ьо')
 
@@ -446,6 +452,9 @@ function replaceFrom(str) {
 
 		.replaceAll('Ԧ', 'Хш')
 		.replaceAll('ԧ', 'хш')
+
+		.replaceAll('', 'Хм')
+		.replaceAll('', 'хм')
 
 		.replaceAll('Ҷ̈а', 'чаю')
 		.replaceAll('ҷ̈а', 'чаю')
