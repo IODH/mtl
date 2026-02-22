@@ -580,11 +580,11 @@ function replaceTo(str) {
 		.replaceAll(/О[јй]/gu, 'Ӧ')
 		.replaceAll(/о[јй]/gu, 'ӧ')
 
-		.replaceAll('Цн', 'Ꙡ')
-		.replaceAll('цн', 'ꙡ')
+		.replaceAll('Цн', '')
+		.replaceAll('цн', '')
 
-		.replaceAll('Цм', '')
-		.replaceAll('цм', '')
+		.replaceAll('Цм', 'Ꙡ')
+		.replaceAll('цм', 'ꙡ')
 
 		.replaceAll('Ор', 'Ꙍр')
 		.replaceAll('ор', 'ꙍр')
