@@ -409,11 +409,11 @@ function replaceFrom(str) {
 		.replaceAll('Ԁӏ', 'Дьо')
 		.replaceAll('ԁӏ', 'дьо')
 
-		.replaceAll('Ꙡ', 'Цн')
-		.replaceAll('ꙡ', 'цн')
+		.replaceAll('Ꙡ', 'Цм')
+		.replaceAll('ꙡ', 'цм')
 
-		.replaceAll('', 'Цм')
-		.replaceAll('', 'цм')
+		.replaceAll('', 'Цн')
+		.replaceAll('', 'цн')
 
 		.replaceAll('ӏ', 'ьо')
 
