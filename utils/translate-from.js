@@ -526,6 +526,9 @@ function replaceFrom(str) {
 		.replaceAll('', 'Гх')
 		.replaceAll('', 'гх')
 
+		.replaceAll('Ꞵ', 'Бл')
+		.replaceAll('ꞵ', 'бл')
+
 		.replaceAll(/[сзСЗрРДд]ь[яюєі]/gu, (m) => m[0] + m[2])
 
 		.replaceAll(/[Ԉ]/gu, 'Л')

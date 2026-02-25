@@ -603,6 +603,9 @@ function replaceTo(str) {
 		.replaceAll('Хн', '')
 		.replaceAll('хн', '')
 
+		.replaceAll('Бл', 'Ꞵ')
+		.replaceAll('бл', 'ꞵ')
+
 		.replaceAll(/Цць[іюяє]/gu, (m) => '̄' + m[3])
 		.replaceAll(/цць[іюяє]/gu, (m) => '̄' + m[3])
 
