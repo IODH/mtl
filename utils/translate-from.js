@@ -6,7 +6,7 @@ function replaceFrom(str) {
 
 			.replaceAll(/[Ё̄Ъ̈̄]/gu, 'Еє')
 			.replaceAll(/[ё̄ъ̈̄]/gu, 'еє')
-			//
+			
 			.replaceAll('̄', 'Цц')
 			.replaceAll('̄', 'цц')
 
@@ -405,8 +405,8 @@ function replaceFrom(str) {
 			.replaceAll('Ӈ', 'Нч')
 			.replaceAll('ӈ', 'нч')
 
-			.replaceAll('Ԩ', 'Чн')
-			.replaceAll('ԩ', 'чн')
+			.replaceAll('Ԩ', 'Нс')
+			.replaceAll('ԩ', 'нс')
 
 			.replaceAll('Ԝ', 'Вл')
 			.replaceAll('ԝ', 'вл')
