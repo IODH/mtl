@@ -102,17 +102,14 @@ function replaceFrom(str) {
 			.replaceAll(/(Д̈|Ӝ|Ӟ|К̈)/gu, (m) => m[0] + 'ю')
 			.replaceAll(/(д̈|ӝ|ӟ|к̈)/gu, (m) => m[0] + 'ю')
 
-			.replaceAll(/[к̄д̄т̄з̄с̄л̄н̄ж̄ш̄р̄в̄]/gu, (m) => m[0] + m[0])
-			.replaceAll(/[Д̄Т̄З̄С̄Л̄Н̄К̄Ж̄Ш̄Р̄В̄]/gu, (m) => m[0] + m[0].toLowerCase())
+			.replaceAll(/(к̄|д̄|т̄|з̄|с̄|л̄|н̄|ж̄|ш̄|р̄|в̄)/gu, (m) => m[0] + m[0])
+			.replaceAll(/(Д̄|Т̄|З̄|С̄|Л̄|Н̄|К̄|Ж̄|Ш̄|Р̄|В̄)/gu, (m) => m[0] + m[0].toLowerCase())
 
-			.replaceAll(/В̌|Г̌|Д̌|Р̌|С̌|Т̌|Х̌/gu, (m) => 'З' + m[0].toLowerCase())
-			.replaceAll(/в̌|г̌|д̌|р̌|с̌|т̌|х̌/gu, (m) => 'з' + m[0])
+			.replaceAll(/(В̌|Г̌|Д̌|Р̌|С̌|Т̌|Х̌)/gu, (m) => 'З' + m[0].toLowerCase())
+			.replaceAll(/(в̌|г̌|д̌|р̌|с̌|т̌|х̌)/gu, (m) => 'з' + m[0])
 
 			.replaceAll('Ӕ', 'Ае')
 			.replaceAll('ӕ', 'ае')
-
-			.replaceAll(/(Ђ|Ԃ)/gu, 'Д')
-			.replaceAll(/(ђ|ԃ)/gu, 'д')
 
 			.replaceAll('Ꙃ', 'Дзе')
 			.replaceAll('ꙃ', 'дзе')
@@ -207,11 +204,11 @@ function replaceFrom(str) {
 			.replaceAll('Ꚏ', 'Цв')
 			.replaceAll('ꚏ', 'цв')
 
-			.replaceAll(/[Ә̄А̄]/gu, 'Аа')
-			.replaceAll(/[ә̄а̄]/gu, 'аа')
+			.replaceAll(/(Ә̄|А̄)/gu, 'Аа')
+			.replaceAll(/(ә̄|а̄)/gu, 'аа')
 
-			.replaceAll(/[Е̄Ъ̄]/gu, 'Ее')
-			.replaceAll(/[е̄ъ̄]/gu, 'ее')
+			.replaceAll(/(Е̄|Ъ̄)/gu, 'Ее')
+			.replaceAll(/(е̄|ъ̄)/gu, 'ее')
 
 			.replaceAll('Џ', 'Зц')
 			.replaceAll('џ', 'зц')
@@ -276,8 +273,8 @@ function replaceFrom(str) {
 			.replaceAll(/[ꙪꚚѺꙨꙬѠѪꙌѼ]/gu, 'О')
 			.replaceAll(/[ꙫꚛѻꙩꙭѡѫꙍѽ]/gu, 'о')
 
-			.replaceAll(/[ѨӚ]/gu, 'А')
-			.replaceAll(/[ѩӛ]/gu, 'а')
+			.replaceAll(/(Ѩ|Ӛ)/gu, 'А')
+			.replaceAll(/(ѩ|ӛ)/gu, 'а')
 
 			.replaceAll(/[ѦӘ]/gu, 'А')
 			.replaceAll(/[ѧә]/gu, 'а')
@@ -285,8 +282,8 @@ function replaceFrom(str) {
 			.replaceAll(/[ѢꙘЪ]/gu, 'Е')
 			.replaceAll(/[ѣꙙъ]/gu, 'е')
 
-			.replaceAll(/[ꙒꙜЪ̈]/gu, 'Є')
-			.replaceAll(/[ꙓꙝъ̈]/gu, 'є')
+			.replaceAll(/(Ꙓ|Ꙝ|Ъ̈)/gu, 'Є')
+			.replaceAll(/(ꙓ|ꙝ|ъ̈)/gu, 'є')
 
 			.replaceAll(/[ꙚꙆѶ]/gu, 'І')
 			.replaceAll(/[ꙛꙇѷ]/gu, 'і')
