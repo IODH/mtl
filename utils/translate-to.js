@@ -99,8 +99,8 @@ function replaceTo(str) {
 			.replaceAll('Тн', 'Т̈')
 			.replaceAll('тн', 'т̈')
 
-			.replaceAll('Чл', 'Ӵ')
-			.replaceAll('чл', 'ӵ')
+			.replaceAll('Чн', 'Ӵ')
+			.replaceAll('чн', 'ӵ')
 
 			.replaceAll('Дю', 'Д̈')
 			.replaceAll('дю', 'д̈')
@@ -653,11 +653,11 @@ function replaceTo(str) {
 			.replaceAll('Чм', 'Ҷ')
 			.replaceAll('чм', 'ҷ')
 
-			.replaceAll('Ҷаю', 'Ҷ̈а')
-			.replaceAll('ҷаю', 'ҷ̈а')
+			.replaceAll('Чт', 'Ҷ̈')
+			.replaceAll('чт', 'ҷ̈')
 
-			.replaceAll('Мч', 'Ӌ')
-			.replaceAll('мч', 'ӌ')
+			.replaceAll('Чл', 'Ӌ')
+			.replaceAll('чл', 'ӌ')
 
 			.replaceAll('Ч̣', 'Чх')
 			.replaceAll('ч̣', 'чх')
