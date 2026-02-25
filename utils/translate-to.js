@@ -1,677 +1,706 @@
 import { consonantLetters } from './constants.js';
 
 function replaceTo(str) {
-	return str
-		.replaceAll(/[жчшкхгґщЩЖЧШКХГҐ][іяює]/gu, (m) => m[0] + 'ҍ' + m[1])
+	return (
+		str
+			.replaceAll(/[жчшкхгґщЩЖЧШКХГҐ][іяює]/gu, (m) => m[0] + 'ҍ' + m[1])
 
-		.replaceAll('Ае', 'Ӕ')
-		.replaceAll('ае', 'ӕ')
+			.replaceAll('Ае', 'Ӕ')
+			.replaceAll('ае', 'ӕ')
 
-		.replaceAll('Джмі', 'Ꙉмҍі')
-		.replaceAll('джмі', 'ꙉмҍі')
+			.replaceAll('Джмі', 'Ꙉмҍі')
+			.replaceAll('джмі', 'ꙉмҍі')
 
-		.replaceAll(/Джҍ[іяює]/gu, (m) => 'Ꙉ' + m[3])
-		.replaceAll(/джҍ[іяює]/gu, (m) => 'ꙉ' + m[3])
+			.replaceAll(/Джҍ[іяює]/gu, (m) => 'Ꙉ' + m[3])
+			.replaceAll(/джҍ[іяює]/gu, (m) => 'ꙉ' + m[3])
 
-		.replaceAll('Дж', 'Ԫ')
-		.replaceAll('дж', 'ԫ')
+			.replaceAll('Дж', 'Ԫ')
+			.replaceAll('дж', 'ԫ')
 
-		.replaceAll('Дзе', 'Ꙃ')
-		.replaceAll('дзе', 'ꙃ')
+			.replaceAll('Дзе', 'Ꙃ')
+			.replaceAll('дзе', 'ꙃ')
 
-		.replaceAll('Дзьо', 'Ԇӏ')
-		.replaceAll('дзьо', 'ԇӏ')
+			.replaceAll('Дзьо', 'Ԇӏ')
+			.replaceAll('дзьо', 'ԇӏ')
 
-		.replaceAll(/Дз[іяює]/gu, (m) => 'Ԇ' + m[2])
-		.replaceAll(/дз[іяює]/gu, (m) => 'ԇ' + m[2])
-		.replaceAll('дԅ', 'ԇ')
+			.replaceAll(/Дз[іяює]/gu, (m) => 'Ԇ' + m[2])
+			.replaceAll(/дз[іяює]/gu, (m) => 'ԇ' + m[2])
+			.replaceAll('дԅ', 'ԇ')
 
-		.replaceAll('Дзв', 'ꚃ')
-		.replaceAll('дзв', 'ꚃ')
+			.replaceAll('Дзв', 'ꚃ')
+			.replaceAll('дзв', 'ꚃ')
 
-		.replaceAll('Дз', 'Ꚉ')
-		.replaceAll('дз', 'ꚉ')
+			.replaceAll('Дз', 'Ꚉ')
+			.replaceAll('дз', 'ꚉ')
 
-		.replaceAll('Йоу', 'І̵Ꙋ')
-		.replaceAll('йоу', 'І̵ꙋ')
+			.replaceAll('Йоу', 'І̵Ꙋ')
+			.replaceAll('йоу', 'І̵ꙋ')
 
-		.replaceAll('Оу', 'Ꙋ')
-		.replaceAll('оу', 'ꙋ')
+			.replaceAll('Оу', 'Ꙋ')
+			.replaceAll('оу', 'ꙋ')
 
-		.replaceAll('Тс', 'Ꚑ')
-		.replaceAll('тс', 'ꚑ')
+			.replaceAll('Тс', 'Ꚑ')
+			.replaceAll('тс', 'ꚑ')
 
-		.replaceAll('Ою', 'Ӧ̄')
-		.replaceAll('ою', 'ӧ̄')
+			.replaceAll('Ою', 'Ӧ̄')
+			.replaceAll('ою', 'ӧ̄')
 
-		.replaceAll('Іо', 'Ҩ')
-		.replaceAll('іо', 'ҩ')
+			.replaceAll('Іо', 'Ҩ')
+			.replaceAll('іо', 'ҩ')
 
-		.replaceAll('От', 'Ѿ')
-		.replaceAll('от', 'ѿ')
+			.replaceAll('От', 'Ѿ')
+			.replaceAll('от', 'ѿ')
 
-		.replaceAll('Кс', 'Ѯ')
-		.replaceAll('кс', 'ѯ')
+			.replaceAll('Кс', 'Ѯ')
+			.replaceAll('кс', 'ѯ')
 
-		.replaceAll('Пс', 'Ѱ')
-		.replaceAll('пс', 'ѱ')
+			.replaceAll('Пс', 'Ѱ')
+			.replaceAll('пс', 'ѱ')
 
-		.replaceAll('Фт', 'Ѳ')
-		.replaceAll('фт', 'ѳ')
+			.replaceAll('Фт', 'Ѳ')
+			.replaceAll('фт', 'ѳ')
 
-		.replaceAll('Льо', 'Љӏ')
-		.replaceAll('льо', 'љӏ')
+			.replaceAll('Льо', 'Љӏ')
+			.replaceAll('льо', 'љӏ')
 
-		.replaceAll('Ньо', 'Њӏ')
-		.replaceAll('ньо', 'њӏ')
+			.replaceAll('Ньо', 'Њӏ')
+			.replaceAll('ньо', 'њӏ')
 
-		.replaceAll('Тьо', 'Ᲊӏ')
-		.replaceAll('тьо', 'ᲊӏ')
+			.replaceAll('Тьо', 'Ᲊӏ')
+			.replaceAll('тьо', 'ᲊӏ')
 
-		.replaceAll('Дьо', 'Ԁӏ')
-		.replaceAll('дьо', 'ԁӏ')
+			.replaceAll('Дьо', 'Ԁӏ')
+			.replaceAll('дьо', 'ԁӏ')
 
-		.replaceAll('Цьо', `ӏ`)
-		.replaceAll('цьо', `ӏ`)
+			.replaceAll('Цьо', `ӏ`)
+			.replaceAll('цьо', `ӏ`)
 
-		.replaceAll('ьо', 'ӏ')
+			.replaceAll('ьо', 'ӏ')
 
-		.replaceAll('Дн', 'Ԁ')
-		.replaceAll('дн', 'ԁ')
+			.replaceAll('Дн', 'Ԁ')
+			.replaceAll('дн', 'ԁ')
 
-		.replaceAll(/ь[яюєї]/gu, (m) => 'ьˮ' + m[1])
-		.replaceAll('Жҍю', 'Ӝ')
-		.replaceAll('жҍю', 'ӝ')
+			.replaceAll(/ь[яюєї]/gu, (m) => 'ьˮ' + m[1])
+			.replaceAll('Жҍю', 'Ӝ')
+			.replaceAll('жҍю', 'ӝ')
 
-		.replaceAll('Зню', 'Ԑ̈')
-		.replaceAll('зню', 'ԑ̈')
+			.replaceAll('Зню', 'Ԑ̈')
+			.replaceAll('зню', 'ԑ̈')
 
-		.replaceAll('Кҍю', 'К̈')
-		.replaceAll('кҍю', 'к̈')
+			.replaceAll('Кҍю', 'К̈')
+			.replaceAll('кҍю', 'к̈')
 
-		.replaceAll('Вт', 'Ꚍ̆')
-		.replaceAll('вт', 'ꚍ̆')
+			.replaceAll('Вт', 'Ꚍ̆')
+			.replaceAll('вт', 'ꚍ̆')
 
-		.replaceAll('Нт', 'Ԣ')
-		.replaceAll('нт', 'ԣ')
+			.replaceAll('Нт', 'Ԣ')
+			.replaceAll('нт', 'ԣ')
 
-		.replaceAll('Тн', 'Т̈')
-		.replaceAll('тн', 'т̈')
+			.replaceAll('Тн', 'Т̈')
+			.replaceAll('тн', 'т̈')
 
-		.replaceAll('Чл', 'Ӵ')
-		.replaceAll('чл', 'ӵ')
+			.replaceAll('Чл', 'Ӵ')
+			.replaceAll('чл', 'ӵ')
 
-		.replaceAll('Дю', 'Д̈')
-		.replaceAll('дю', 'д̈')
+			.replaceAll('Дю', 'Д̈')
+			.replaceAll('дю', 'д̈')
 
-		.replaceAll('Зю', 'Ӟ')
-		.replaceAll('зю', 'ӟ')
+			.replaceAll('Зю', 'Ӟ')
+			.replaceAll('зю', 'ӟ')
 
-		.replaceAll('Цю', 'Ц̈')
-		.replaceAll('цю', 'ц̈')
+			.replaceAll('Цю', 'Ц̈')
+			.replaceAll('цю', 'ц̈')
 
-		.replaceAll(/[рР][іяює]/gu, (m) => m[0] + 'ь' + m[1])
+			.replaceAll(/[рР][іяює]/gu, (m) => m[0] + 'ь' + m[1])
+			//
+			.replaceAll(/Цц[іюяє]/gu, (m) => '̄' + m[2])
+			.replaceAll(/цц[іюяє]/gu, (m) => '̄' + m[2])
 
-		.replaceAll(/Ц[іюяє]/gu, (m) => '' + m[1])
-		.replaceAll(/ц[іюяє]/gu, (m) => '' + m[1])
+			.replaceAll(/Ц[іюяє]/gu, (m) => '' + m[1])
+			.replaceAll(/ц[іюяє]/gu, (m) => '' + m[1])
 
-		.replaceAll(/Т[іюяє]/gu, (m) => 'Ԏ' + m[1])
-		.replaceAll(/т[іюяє]/gu, (m) => 'ԏ' + m[1])
+			.replaceAll(/Тт[іюяє]/gu, (m) => 'Ԏ̄' + m[2])
+			.replaceAll(/тт[іюяє]/gu, (m) => 'ԏ̄' + m[2])
 
-		.replaceAll(/Л[яює]/gu, (m) => 'Ԉ' + m[1])
-		.replaceAll(/л[яює]/gu, (m) => 'ԉ' + m[1])
+			.replaceAll(/Т[іюяє]/gu, (m) => 'Ԏ' + m[1])
+			.replaceAll(/т[іюяє]/gu, (m) => 'ԏ' + m[1])
 
-		.replaceAll('Лі', 'і')
-		.replaceAll('лі', 'і')
+			.replaceAll(/Лл[яює]/gu, (m) => 'Ԉ̄' + m[2])
+			.replaceAll(/лл[яює]/gu, (m) => 'ԉ̄' + m[2])
 
-		.replaceAll(/Н[іяює]/gu, (m) => 'Ԋ' + m[1])
-		.replaceAll(/н[іяює]/gu, (m) => 'ԋ' + m[1])
+			.replaceAll(/Л[яює]/gu, (m) => 'Ԉ' + m[1])
+			.replaceAll(/л[яює]/gu, (m) => 'ԉ' + m[1])
 
-		.replaceAll(/Д[яє]/gu, (m) => 'Ԃ' + m[1])
-		.replaceAll(/д[яє]/gu, (m) => 'ԃ' + m[1])
+			.replaceAll('Ллі', '̄і')
+			.replaceAll('ллі', '̄і')
 
-		.replaceAll(/Дв[іяєю]/gu, (m) => '' + m[2])
-		.replaceAll(/дв[іяєю]/gu, (m) => '' + m[2])
+			.replaceAll('Лі', 'і')
+			.replaceAll('лі', 'і')
 
-		.replaceAll('Ді', 'Ђі')
-		.replaceAll('ді', 'ђі')
+			.replaceAll(/Нн[іяює]/gu, (m) => 'Ԋ̄' + m[2])
+			.replaceAll(/нн[іяює]/gu, (m) => 'ԋ̄' + m[2])
 
-		.replaceAll(/З[іяює]/gu, (m) => 'Ԅ' + m[1])
-		.replaceAll(/з[іяює]/gu, (m) => 'ԅ' + m[1])
+			.replaceAll(/Н[іяює]/gu, (m) => 'Ԋ' + m[1])
+			.replaceAll(/н[іяює]/gu, (m) => 'ԋ' + m[1])
 
-		.replaceAll(/С[іяює]/gu, (m) => 'Ԍ' + m[1])
-		.replaceAll(/с[іяює]/gu, (m) => 'ԍ' + m[1])
+			.replaceAll(/Дд[яє]/gu, (m) => 'Ԃ̄' + m[2])
+			.replaceAll(/дд[яє]/gu, (m) => 'ԃ̄' + m[2])
 
-		.replaceAll('Ан', 'Ѧн')
-		.replaceAll('ан', 'ѧн')
+			.replaceAll(/Д[яє]/gu, (m) => 'Ԃ' + m[1])
+			.replaceAll(/д[яє]/gu, (m) => 'ԃ' + m[1])
 
-		.replaceAll('Ян', 'Ѩн')
-		.replaceAll('ян', 'ѩн')
+			.replaceAll(/Дв[іяєю]/gu, (m) => '' + m[2])
+			.replaceAll(/дв[іяєю]/gu, (m) => '' + m[2])
 
-		.replaceAll('Йон', 'Ѭн')
-		.replaceAll('йон', 'ѭн')
+			.replaceAll('Дді', 'Ђ̄')
+			.replaceAll('дді', 'ђ̄')
 
-		.replaceAll('Он', 'Ѫн')
-		.replaceAll('он', 'ѫн')
+			.replaceAll('Ді', 'Ђі')
+			.replaceAll('ді', 'ђі')
 
-		.replaceAll('Ен', 'Ꙙн')
-		.replaceAll('ен', 'ꙙн')
+			.replaceAll(/Зз[іяює]/gu, (m) => 'Ԅ̄' + m[2])
+			.replaceAll(/зз[іяює]/gu, (m) => 'ԅ̄' + m[2])
 
-		.replaceAll('Єн', 'Ꙝн')
-		.replaceAll('єн', 'ꙝн')
+			.replaceAll(/З[іяює]/gu, (m) => 'Ԅ' + m[1])
+			.replaceAll(/з[іяює]/gu, (m) => 'ԅ' + m[1])
 
-		.replaceAll('Ін', 'Ꙛн')
-		.replaceAll('ін', 'ꙛн')
+			.replaceAll(/Сс[іяює]/gu, (m) => 'Ԍ̄' + m[2])
+			.replaceAll(/сс[іяює]/gu, (m) => 'ԍ̄' + m[2])
 
-		.replaceAll('Ць', '')
-		.replaceAll('ць', '')
+			.replaceAll(/С[іяює]/gu, (m) => 'Ԍ' + m[1])
+			.replaceAll(/с[іяює]/gu, (m) => 'ԍ' + m[1])
 
-		.replaceAll('Ль', 'Љ')
-		.replaceAll('ль', 'љ')
+			.replaceAll('Ан', 'Ѧн')
+			.replaceAll('ан', 'ѧн')
 
-		.replaceAll('Нь', 'Њ')
-		.replaceAll('нь', 'њ')
+			.replaceAll('Ян', 'Ѩн')
+			.replaceAll('ян', 'ѩн')
 
-		.replaceAll('Хс', '')
-		.replaceAll('хс', '')
+			.replaceAll('Йон', 'Ѭн')
+			.replaceAll('йон', 'ѭн')
 
-		.replaceAll('Ст', 'Ѕ')
-		.replaceAll('ст', 'ѕ')
+			.replaceAll('Он', 'Ѫн')
+			.replaceAll('он', 'ѫн')
 
-		.replaceAll('Нг', 'Ҥ')
-		.replaceAll('нг', 'ҥ')
+			.replaceAll('Ен', 'Ꙙн')
+			.replaceAll('ен', 'ꙙн')
 
-		.replaceAll('Дг', 'Ꙣ')
-		.replaceAll('дг', 'ꙣ')
+			.replaceAll('Єн', 'Ꙝн')
+			.replaceAll('єн', 'ꙝн')
 
-		.replaceAll('Лг', 'Ꙥ')
-		.replaceAll('лг', 'ꙥ')
+			.replaceAll('Ін', 'Ꙛн')
+			.replaceAll('ін', 'ꙛн')
 
-		.replaceAll('Мг', 'Ꙧ')
-		.replaceAll('мг', 'ꙧ')
+			.replaceAll('Ць', '')
+			.replaceAll('ць', '')
 
-		.replaceAll('Нґ', 'Ҥ̂')
-		.replaceAll('нґ', 'ҥ̂')
+			.replaceAll('Ль', 'Љ')
+			.replaceAll('ль', 'љ')
 
-		.replaceAll('Іа', 'Ꙗ')
-		.replaceAll('іа', 'ꙗ')
+			.replaceAll('Нь', 'Њ')
+			.replaceAll('нь', 'њ')
 
-		.replaceAll('Іє', 'Ѥ')
-		.replaceAll('іє', 'ѥ')
+			.replaceAll('Хс', '')
+			.replaceAll('хс', '')
 
-		.replaceAll('Чч', 'Ꚇ')
-		.replaceAll('чч', 'ꚇ')
+			.replaceAll('Ст', 'Ѕ')
+			.replaceAll('ст', 'ѕ')
 
-		.replaceAll('Ір', 'Ѷр')
-		.replaceAll('ір', 'ѷр')
+			.replaceAll('Нг', 'Ҥ')
+			.replaceAll('нг', 'ҥ')
 
-		.replaceAll('Ом', 'Ѡм')
-		.replaceAll('ом', 'ѡм')
+			.replaceAll('Дг', 'Ꙣ')
+			.replaceAll('дг', 'ꙣ')
 
-		.replaceAll('Яє', 'Ԙ')
-		.replaceAll('яє', 'ԙ')
+			.replaceAll('Лг', 'Ꙥ')
+			.replaceAll('лг', 'ꙥ')
 
-		.replaceAll('Рх', 'Ԗ')
-		.replaceAll('рх', 'ԗ')
+			.replaceAll('Мг', 'Ꙧ')
+			.replaceAll('мг', 'ꙧ')
 
-		.replaceAll('Лх', 'Ԕ')
-		.replaceAll('лх', 'ԕ')
+			.replaceAll('Нґ', 'Ҥ̂')
+			.replaceAll('нґ', 'ҥ̂')
 
-		.replaceAll('Др', 'Δ')
-		.replaceAll('др', 'δ')
+			.replaceAll('Іа', 'Ꙗ')
+			.replaceAll('іа', 'ꙗ')
 
-		.replaceAll('Еєр', 'Ъ̈̄р')
-		.replaceAll('еєр', 'ъ̈̄р')
+			.replaceAll('Іє', 'Ѥ')
+			.replaceAll('іє', 'ѥ')
 
-		.replaceAll('Еер', 'Ъ̄р')
-		.replaceAll('еер', 'ъ̄р')
+			.replaceAll('Чч', 'Ꚇ')
+			.replaceAll('чч', 'ꚇ')
 
-		.replaceAll('Єр', 'Ъ̈р')
-		.replaceAll('єр', 'ъ̈р')
+			.replaceAll('Ір', 'Ѷр')
+			.replaceAll('ір', 'ѷр')
 
-		.replaceAll('Ер', 'Ър')
-		.replaceAll('ер', 'ър')
+			.replaceAll('Ом', 'Ѡм')
+			.replaceAll('ом', 'ѡм')
 
-		.replaceAll('Єєв', 'Ӭ̄в')
-		.replaceAll('єєв', 'ӭ̄в')
+			.replaceAll('Яє', 'Ԙ')
+			.replaceAll('яє', 'ԙ')
 
-		.replaceAll('Ил', 'Ыл')
-		.replaceAll('ил', 'ыл')
+			.replaceAll('Рх', 'Ԗ')
+			.replaceAll('рх', 'ԗ')
 
-		.replaceAll('Чҍі', 'Ћҍі')
-		.replaceAll('чҍі', 'ћҍі')
+			.replaceAll('Лх', 'Ԕ')
+			.replaceAll('лх', 'ԕ')
 
-		.replaceAll(/Чҍ[яює]/gu, (m) => 'ҍ' + m[2])
-		.replaceAll(/чҍ[яює]/gu, (m) => 'ҍ' + m[2])
+			.replaceAll('Др', 'Δ')
+			.replaceAll('др', 'δ')
 
-		.replaceAll(/Ч[аеу]/gu, (m) => '' + m[1])
-		.replaceAll(/ч[аеу]/gu, (m) => '' + m[1])
+			.replaceAll('Еєр', 'Ъ̈̄р')
+			.replaceAll('еєр', 'ъ̈̄р')
 
-		.replaceAll(/[жшЖШ]ив/gu, (m) => m[0] + 'ы̆')
-		.replaceAll(/[жшЖШ]ий/gu, (m) => m[0] + 'ӹъ')
-		.replaceAll(/[жшЖШ]ию/gu, (m) => m[0] + 'ы̄')
+			.replaceAll('Еер', 'Ъ̄р')
+			.replaceAll('еер', 'ъ̄р')
 
-		.replaceAll(/[жш]и/gu, (m) => m[0] + 'ы')
-		.replaceAll(/[ЖШ]и/gu, (m) => m[0] + 'ы')
+			.replaceAll('Єр', 'Ъ̈р')
+			.replaceAll('єр', 'ъ̈р')
 
-		.replaceAll(/И[жш]/gu, (m) => 'Ы' + m[1])
-		.replaceAll(/и[жш]/gu, (m) => 'ы' + m[1])
+			.replaceAll('Ер', 'Ър')
+			.replaceAll('ер', 'ър')
 
-		.replaceAll('Оєв', 'Ө̆')
-		.replaceAll('оєв', 'Ө̆')
+			.replaceAll('Єєв', 'Ӭ̄в')
+			.replaceAll('єєв', 'ӭ̄в')
 
-		.replaceAll(/[бпвмфБПВМФ]е/gu, (m) => m[0] + 'ѣ')
-		.replaceAll(/[бпвмфБПВМФ]є/gu, (m) => m[0] + 'ҍꙓ')
-		.replaceAll(/[бпвмфБПВМФ]і/gu, (m) => m[0] + 'ҍꙇ')
-		.replaceAll(/[бпвмфБПВМФ]и/gu, (m) => m[0] + 'ꙑ')
-		.replaceAll(/[бпвмфБПВМФ]ая/gu, (m) => m[0] + 'іӛ̄')
-		.replaceAll(/[бпвмфБПВМФ]аа/gu, (m) => m[0] + 'ә̄')
-		.replaceAll(/[бпвмфБПВМФ]а/gu, (m) => m[0] + 'ә')
-		.replaceAll(/[бпвмфБПВМФ]я/gu, (m) => m[0] + 'ҍӛ')
+			.replaceAll('Ил', 'Ыл')
+			.replaceAll('ил', 'ыл')
 
-		.replaceAll(/Є[бпвмф]/gu, (m) => 'Ꙓ' + m[1])
-		.replaceAll(/Е[бпвмф]/gu, (m) => 'Ѣ' + m[1])
-		.replaceAll(/И[бпвмф]/gu, (m) => 'Ꙑ' + m[1])
-		.replaceAll(/І[бпвмф]/gu, (m) => 'Ꙇ' + m[1])
-		.replaceAll(/Ая[бпвмф]/gu, (m) => 'Ӛ̄' + m[1])
-		.replaceAll(/Аа[бпвмф]/gu, (m) => 'Ә̄' + m[1])
-		.replaceAll(/А[бпвмф]/gu, (m) => 'Ә' + m[1])
-		.replaceAll(/Я[бпвмф]/gu, (m) => 'Ӛ' + m[1])
+			.replaceAll('Чҍі', 'Ћҍі')
+			.replaceAll('чҍі', 'ћҍі')
 
-		.replaceAll(/є[бпвмф]/gu, (m) => 'ꙓ' + m[1])
-		.replaceAll(/е[бпвмф]/gu, (m) => 'ѣ' + m[1])
-		.replaceAll(/и[бпвмф]/gu, (m) => 'ꙑ' + m[1])
-		.replaceAll(/і[бпвмф]/gu, (m) => 'ꙇ' + m[1])
-		.replaceAll(/ая[бпвмф]/gu, (m) => 'ӛ̄' + m[1])
-		.replaceAll(/аа[бпвмф]/gu, (m) => 'ә̄' + m[1])
-		.replaceAll(/а[бпвмф]/gu, (m) => 'ә' + m[1])
-		.replaceAll(/я[бпвмф]/gu, (m) => 'ӛ' + m[1])
+			.replaceAll(/Чҍ[яює]/gu, (m) => 'ҍ' + m[2])
+			.replaceAll(/чҍ[яює]/gu, (m) => 'ҍ' + m[2])
 
-		.replaceAll(/[бпвмфБПВМФ][яю]/gu, (m) => m[0] + 'ҍ' + m[1])
+			.replaceAll(/Ч[аеу]/gu, (m) => '' + m[1])
+			.replaceAll(/ч[аеу]/gu, (m) => '' + m[1])
 
-		.replaceAll('Ть', 'Ᲊ')
-		.replaceAll('ть', 'ᲊ')
+			.replaceAll(/[жшЖШ]ив/gu, (m) => m[0] + 'ы̆')
+			.replaceAll(/[жшЖШ]ий/gu, (m) => m[0] + 'ӹъ')
+			.replaceAll(/[жшЖШ]ию/gu, (m) => m[0] + 'ы̄')
 
-		.replaceAll('Ин', 'Ꙟн')
-		.replaceAll('ин', 'ꙟн')
+			.replaceAll(/[жш]и/gu, (m) => m[0] + 'ы')
+			.replaceAll(/[ЖШ]и/gu, (m) => m[0] + 'ы')
 
-		.replaceAll('Шв', 'Ꚗ')
-		.replaceAll('шв', 'ꚗ')
+			.replaceAll(/И[жш]/gu, (m) => 'Ы' + m[1])
+			.replaceAll(/и[жш]/gu, (m) => 'ы' + m[1])
 
-		.replaceAll('Вш', 'Ꚗ̆')
-		.replaceAll('вш', 'ꚗ̆')
+			.replaceAll('Оєв', 'Ө̆')
+			.replaceAll('оєв', 'Ө̆')
 
-		.replaceAll('Цв', 'Ꚏ')
-		.replaceAll('цв', 'ꚏ')
+			.replaceAll(/[бпвмфБПВМФ]е/gu, (m) => m[0] + 'ѣ')
+			.replaceAll(/[бпвмфБПВМФ]є/gu, (m) => m[0] + 'ҍꙓ')
+			.replaceAll(/[бпвмфБПВМФ]і/gu, (m) => m[0] + 'ҍꙇ')
+			.replaceAll(/[бпвмфБПВМФ]и/gu, (m) => m[0] + 'ꙑ')
+			.replaceAll(/[бпвмфБПВМФ]ая/gu, (m) => m[0] + 'іӛ̄')
+			.replaceAll(/[бпвмфБПВМФ]аа/gu, (m) => m[0] + 'ә̄')
+			.replaceAll(/[бпвмфБПВМФ]а/gu, (m) => m[0] + 'ә')
+			.replaceAll(/[бпвмфБПВМФ]я/gu, (m) => m[0] + 'ҍӛ')
 
-		.replaceAll('Вц', 'Ꚏ̆')
-		.replaceAll('вц', 'ꚏ̆')
+			.replaceAll(/Є[бпвмф]/gu, (m) => 'Ꙓ' + m[1])
+			.replaceAll(/Е[бпвмф]/gu, (m) => 'Ѣ' + m[1])
+			.replaceAll(/И[бпвмф]/gu, (m) => 'Ꙑ' + m[1])
+			.replaceAll(/І[бпвмф]/gu, (m) => 'Ꙇ' + m[1])
+			.replaceAll(/Ая[бпвмф]/gu, (m) => 'Ӛ̄' + m[1])
+			.replaceAll(/Аа[бпвмф]/gu, (m) => 'Ә̄' + m[1])
+			.replaceAll(/А[бпвмф]/gu, (m) => 'Ә' + m[1])
+			.replaceAll(/Я[бпвмф]/gu, (m) => 'Ӛ' + m[1])
 
-		.replaceAll('Ув', 'Ў')
-		.replaceAll('ув', 'ў')
+			.replaceAll(/є[бпвмф]/gu, (m) => 'ꙓ' + m[1])
+			.replaceAll(/е[бпвмф]/gu, (m) => 'ѣ' + m[1])
+			.replaceAll(/и[бпвмф]/gu, (m) => 'ꙑ' + m[1])
+			.replaceAll(/і[бпвмф]/gu, (m) => 'ꙇ' + m[1])
+			.replaceAll(/ая[бпвмф]/gu, (m) => 'ӛ̄' + m[1])
+			.replaceAll(/аа[бпвмф]/gu, (m) => 'ә̄' + m[1])
+			.replaceAll(/а[бпвмф]/gu, (m) => 'ә' + m[1])
+			.replaceAll(/я[бпвмф]/gu, (m) => 'ӛ' + m[1])
 
-		.replaceAll('Зц', 'Џ')
-		.replaceAll('зц', 'џ')
+			.replaceAll(/[бпвмфБПВМФ][яю]/gu, (m) => m[0] + 'ҍ' + m[1])
 
-		.replaceAll('Цз', 'Џ̆')
-		.replaceAll('цз', 'џ̆')
+			.replaceAll('Ть', 'Ᲊ')
+			.replaceAll('ть', 'ᲊ')
 
-		.replaceAll('Рт', 'Ҏ')
-		.replaceAll('рт', 'ҏ')
+			.replaceAll('Ин', 'Ꙟн')
+			.replaceAll('ин', 'ꙟн')
 
-		.replaceAll('Чж', 'Ҹ')
-		.replaceAll('чж', 'ҹ')
+			.replaceAll('Шв', 'Ꚗ')
+			.replaceAll('шв', 'ꚗ')
 
-		.replaceAll('Чь', 'Ћь')
-		.replaceAll('чь', 'ћь')
+			.replaceAll('Вш', 'Ꚗ̆')
+			.replaceAll('вш', 'ꚗ̆')
 
-		.replaceAll('Оє', 'Ө')
-		.replaceAll('оє', 'ө')
+			.replaceAll('Цв', 'Ꚏ')
+			.replaceAll('цв', 'ꚏ')
 
-		.replaceAll('Хв', 'Ꚕ')
-		.replaceAll('хв', 'ꚕ')
+			.replaceAll('Вц', 'Ꚏ̆')
+			.replaceAll('вц', 'ꚏ̆')
 
-		.replaceAll('Хр', 'Һ')
-		.replaceAll('хр', 'һ')
+			.replaceAll('Ув', 'Ў')
+			.replaceAll('ув', 'ў')
 
-		.replaceAll('Км', 'Ԛ')
-		.replaceAll('км', 'ԛ')
+			.replaceAll('Зц', 'Џ')
+			.replaceAll('зц', 'џ')
 
-		.replaceAll('Дч', 'Ԭ')
-		.replaceAll('дч', 'ԭ')
+			.replaceAll('Цз', 'Џ̆')
+			.replaceAll('цз', 'џ̆')
 
-		.replaceAll('Тцю', 'Ҵ̈')
-		.replaceAll('тцю', 'ҵ̈')
+			.replaceAll('Рт', 'Ҏ')
+			.replaceAll('рт', 'ҏ')
 
-		.replaceAll('Тц', 'Ҵ')
-		.replaceAll('тц', 'ҵ')
+			.replaceAll('Чж', 'Ҹ')
+			.replaceAll('чж', 'ҹ')
 
-		.replaceAll('Коп', 'Ҁ')
-		.replaceAll('коп', 'ҁ')
+			.replaceAll('Чь', 'Ћь')
+			.replaceAll('чь', 'ћь')
 
-		.replaceAll('Зм', 'Ꙁ')
-		.replaceAll('зм', 'ꙁ')
+			.replaceAll('Оє', 'Ө')
+			.replaceAll('оє', 'ө')
 
-		.replaceAll('Тч', 'Ꚓ')
-		.replaceAll('тч', 'ꚓ')
+			.replaceAll('Хв', 'Ꚕ')
+			.replaceAll('хв', 'ꚕ')
 
-		.replaceAll('Тв', 'Ꚍ')
-		.replaceAll('тв', 'ꚍ')
+			.replaceAll('Хр', 'Һ')
+			.replaceAll('хр', 'һ')
 
-		.replaceAll('Дв', 'Ꚁ')
-		.replaceAll('дв', 'ꚁ')
+			.replaceAll('Км', 'Ԛ')
+			.replaceAll('км', 'ԛ')
 
-		.replaceAll('Ир', 'Ѵр')
-		.replaceAll('ир', 'ѵр')
+			.replaceAll('Дч', 'Ԭ')
+			.replaceAll('дч', 'ԭ')
 
-		.replaceAll('Дво', 'Двꙫ')
-		.replaceAll('дво', 'двꙫ')
+			.replaceAll('Тцю', 'Ҵ̈')
+			.replaceAll('тцю', 'ҵ̈')
 
-		.replaceAll('Обө', 'Ꙫбє')
-		.replaceAll('обө', 'ꙫбє')
+			.replaceAll('Тц', 'Ҵ')
+			.replaceAll('тц', 'ҵ')
 
-		.replaceAll(/О(кр|хр)/gu, (_, group) => 'Ꚛ' + group)
-		.replaceAll(/о(кр|хр)/gu, (_, group) => 'ꚛ' + group)
+			.replaceAll('Коп', 'Ҁ')
+			.replaceAll('коп', 'ҁ')
 
-		.replaceAll('Багато', 'Багтꙮ')
-		.replaceAll('багато', 'багтꙮ')
+			.replaceAll('Зм', 'Ꙁ')
+			.replaceAll('зм', 'ꙁ')
 
-		.replaceAll('Много', 'Мнꙮг')
-		.replaceAll('много', 'мнꙮг')
+			.replaceAll('Тч', 'Ꚓ')
+			.replaceAll('тч', 'ꚓ')
 
-		.replaceAll('Ог', 'Ѻг')
-		.replaceAll('ог', 'ѻг')
+			.replaceAll('Тв', 'Ꚍ')
+			.replaceAll('тв', 'ꚍ')
 
-		.replaceAll('Око', 'Ꙩко')
-		.replaceAll('око', 'ꙩко')
+			.replaceAll('Дв', 'Ꚁ')
+			.replaceAll('дв', 'ꚁ')
 
-		.replaceAll('Очо', 'Ꚙч')
-		.replaceAll('очо', 'ꚙч')
+			.replaceAll('Ир', 'Ѵр')
+			.replaceAll('ир', 'ѵр')
 
-		.replaceAll(/Очҍі[ ,-:;]/gu, (m) => 'Ꙭ' + m[1] + m[2] + m[3] + m[4])
-		.replaceAll(/очҍі[ ,-:;]/gu, (m) => 'ꙭ' + m[1] + m[2] + m[3] + m[4])
+			.replaceAll('Дво', 'Двꙫ')
+			.replaceAll('дво', 'двꙫ')
 
-		.replaceAll('Оі', 'Ꙕ')
-		.replaceAll('оі', 'ꙕ')
+			.replaceAll('Обө', 'Ꙫбє')
+			.replaceAll('обө', 'ꙫбє')
 
-		.replaceAll('Аа', 'А̄')
-		.replaceAll('аа', 'а̄')
+			.replaceAll(/О(кр|хр)/gu, (_, group) => 'Ꚛ' + group)
+			.replaceAll(/о(кр|хр)/gu, (_, group) => 'ꚛ' + group)
 
-		.replaceAll('Оо', 'О̄')
-		.replaceAll('оо', 'о̄')
+			.replaceAll('Багато', 'Багтꙮ')
+			.replaceAll('багато', 'багтꙮ')
 
-		.replaceAll('Уу', 'Ӯ')
-		.replaceAll('уу', 'ӯ')
+			.replaceAll('Много', 'Мнꙮг')
+			.replaceAll('много', 'мнꙮг')
 
-		.replaceAll('Ее', 'Е̄')
-		.replaceAll('ее', 'е̄')
+			.replaceAll('Ог', 'Ѻг')
+			.replaceAll('ог', 'ѻг')
 
-		.replaceAll('Ии', 'Ӣ')
-		.replaceAll('ии', 'ӣ')
+			.replaceAll('Око', 'Ꙩко')
+			.replaceAll('око', 'ꙩко')
 
-		.replaceAll('Її', 'Ї̄')
-		.replaceAll('її', 'ї̄')
+			.replaceAll('Очо', 'Ꚙч')
+			.replaceAll('очо', 'ꚙч')
 
-		.replaceAll('Іі', 'Ī')
-		.replaceAll('іі', 'ī')
+			.replaceAll(/Очҍі[ ,-:;]/gu, (m) => 'Ꙭ' + m[1] + m[2] + m[3] + m[4])
+			.replaceAll(/очҍі[ ,-:;]/gu, (m) => 'ꙭ' + m[1] + m[2] + m[3] + m[4])
 
-		.replaceAll('Ая', 'Ӓ̄')
-		.replaceAll('ая', 'ӓ̄')
+			.replaceAll('Оі', 'Ꙕ')
+			.replaceAll('оі', 'ꙕ')
 
-		.replaceAll('Еє', 'Ё̄')
-		.replaceAll('еє', 'ё̄')
+			.replaceAll('Аа', 'А̄')
+			.replaceAll('аа', 'а̄')
 
-		.replaceAll('Ую', 'Ӱ̄')
-		.replaceAll('ую', 'ӱ̄')
+			.replaceAll('Оо', 'О̄')
+			.replaceAll('оо', 'о̄')
 
-		.replaceAll('Йо', 'Јо')
-		.replaceAll('йо', 'јо')
+			.replaceAll('Уу', 'Ӯ')
+			.replaceAll('уу', 'ӯ')
 
-		.replaceAll('Зжв', 'Ꚅ̆')
-		.replaceAll('зжв', 'ꚅ̆')
+			.replaceAll('Ее', 'Е̄')
+			.replaceAll('ее', 'е̄')
 
-		.replaceAll('Зж', 'Ꚅ')
-		.replaceAll('зж', 'ꚅ')
+			.replaceAll('Ии', 'Ӣ')
+			.replaceAll('ии', 'ӣ')
 
-		.replaceAll('Елв', 'Э̆л')
-		.replaceAll('елв', 'э̆л')
+			.replaceAll('Її', 'Ї̄')
+			.replaceAll('її', 'ї̄')
 
-		.replaceAll('Ел', 'Эл')
-		.replaceAll('ел', 'эл')
+			.replaceAll('Іі', 'Ī')
+			.replaceAll('іі', 'ī')
 
-		.replaceAll('Ейл', 'Ӭл')
-		.replaceAll('ейл', 'ӭл')
+			.replaceAll('Ая', 'Ӓ̄')
+			.replaceAll('ая', 'ӓ̄')
 
-		.replaceAll('Ей', 'Ё')
-		.replaceAll('ей', 'ё')
+			.replaceAll('Еє', 'Ё̄')
+			.replaceAll('еє', 'ё̄')
 
-		.replaceAll('Чк', 'Ҿ')
-		.replaceAll('чк', 'ҿ')
+			.replaceAll('Ую', 'Ӱ̄')
+			.replaceAll('ую', 'ӱ̄')
 
-		.replaceAll('Вч', 'Ҽ')
-		.replaceAll('вч', 'ҽ')
+			.replaceAll('Йо', 'Јо')
+			.replaceAll('йо', 'јо')
 
-		.replaceAll('Чв', 'Ҽ̆')
-		.replaceAll('чв', 'ҽ̆')
+			.replaceAll('Зжв', 'Ꚅ̆')
+			.replaceAll('зжв', 'ꚅ̆')
 
-		.replaceAll('Зб', 'Ӡ')
-		.replaceAll('зб', 'ӡ')
+			.replaceAll('Зж', 'Ꚅ')
+			.replaceAll('зж', 'ꚅ')
 
-		.replaceAll('Юю', 'Ю̄')
-		.replaceAll('юю', 'ю̄')
+			.replaceAll('Елв', 'Э̆л')
+			.replaceAll('елв', 'э̆л')
 
-		.replaceAll('Яя', 'Я̄')
-		.replaceAll('яя', 'я̄')
+			.replaceAll('Ел', 'Эл')
+			.replaceAll('ел', 'эл')
 
-		.replaceAll('Ое', 'О̆')
-		.replaceAll('ое', 'о̆')
+			.replaceAll('Ейл', 'Ӭл')
+			.replaceAll('ейл', 'ӭл')
 
-		.replaceAll('Ює', 'Ӫ')
-		.replaceAll('ює', 'ӫ')
+			.replaceAll('Ей', 'Ё')
+			.replaceAll('ей', 'ё')
 
-		.replaceAll('Тет', 'Θ')
-		.replaceAll('тет', 'ϑ')
+			.replaceAll('Чк', 'Ҿ')
+			.replaceAll('чк', 'ҿ')
 
-		.replaceAll('Тх', 'Т̓')
-		.replaceAll('тх', 'т̓')
+			.replaceAll('Вч', 'Ҽ')
+			.replaceAll('вч', 'ҽ')
 
-		.replaceAll('Рк', 'Р̌')
-		.replaceAll('рк', 'р̌')
+			.replaceAll('Чв', 'Ҽ̆')
+			.replaceAll('чв', 'ҽ̆')
 
-		.replaceAll(/дд|тт|зз|сс|цц|лл|нн|жж|шш|рр|вв|кк/gu, (m) => m[0] + '̄')
-		.replaceAll(/Дд|Тт|Зз|Сс|Цц|Лл|Нн|Жж|Шш|Рр|Вв|Кк/gu, (m) => m[0] + '̄')
+			.replaceAll('Зб', 'Ӡ')
+			.replaceAll('зб', 'ӡ')
 
-		.replaceAll(/Зв|Зг|Зд|Зс|Зт|Зх/gu, (m) => m[1].toUpperCase() + '̌')
-		.replaceAll(/зв|зг|зд|зс|зт|зх/gu, (m) => m[1] + '̌')
+			.replaceAll('Юю', 'Ю̄')
+			.replaceAll('юю', 'ю̄')
 
-		.replaceAll('Ао', 'А̊')
-		.replaceAll('ао', 'а̊')
+			.replaceAll('Яя', 'Я̄')
+			.replaceAll('яя', 'я̄')
 
-		.replaceAll('Уо', 'У̊')
-		.replaceAll('уо', 'у̊')
+			.replaceAll('Ое', 'О̆')
+			.replaceAll('ое', 'о̆')
 
-		.replaceAll('Гр', 'Ӻ')
-		.replaceAll('гр', 'ӻ')
+			.replaceAll('Ює', 'Ӫ')
+			.replaceAll('ює', 'ӫ')
 
-		.replaceAll('Гн', 'Ғ')
-		.replaceAll('гн', 'ғ')
+			.replaceAll('Тет', 'Θ')
+			.replaceAll('тет', 'ϑ')
 
-		.replaceAll('Гл', 'Ғ̌')
-		.replaceAll('гл', 'ғ̌')
+			.replaceAll('Тх', 'Т̓')
+			.replaceAll('тх', 'т̓')
 
-		.replaceAll('Вг', 'Ӷ')
-		.replaceAll('вг', 'ӷ')
+			.replaceAll('Рк', 'Р̌')
+			.replaceAll('рк', 'р̌')
 
-		.replaceAll('Гв', 'Ҕ')
-		.replaceAll('гв', 'ҕ')
+			.replaceAll(/дд|тт|зз|сс|цц|лл|нн|жж|шш|рр|вв|кк/gu, (m) => m[0] + '̄')
+			.replaceAll(/Дд|Тт|Зз|Сс|Цц|Лл|Нн|Жж|Шш|Рр|Вв|Кк/gu, (m) => m[0] + '̄')
 
-		.replaceAll('Кр', 'Ԟ')
-		.replaceAll('кр', 'ԟ')
+			.replaceAll(/Зв|Зг|Зд|Зс|Зт|Зх/gu, (m) => m[1].toUpperCase() + '̌')
+			.replaceAll(/зв|зг|зд|зс|зт|зх/gu, (m) => m[1] + '̌')
 
-		.replaceAll('Кн', 'Ҡ')
-		.replaceAll('кн', 'ҡ')
+			.replaceAll('Ао', 'А̊')
+			.replaceAll('ао', 'а̊')
 
-		.replaceAll('Кц', 'К̆')
-		.replaceAll('кц', 'к̆')
+			.replaceAll('Уо', 'У̊')
+			.replaceAll('уо', 'у̊')
 
-		.replaceAll('Кв', '')
-		.replaceAll('кв', '')
+			.replaceAll('Гр', 'Ӻ')
+			.replaceAll('гр', 'ӻ')
 
-		.replaceAll('Вк', 'К̑')
-		.replaceAll('вк', 'к̑')
+			.replaceAll('Гн', 'Ғ')
+			.replaceAll('гн', 'ғ')
 
-		.replaceAll('Кл', 'Ҟ')
-		.replaceAll('кл', 'ҟ')
+			.replaceAll('Гл', 'Ғ̌')
+			.replaceAll('гл', 'ғ̌')
 
-		.replaceAll('Кт', 'Ӄ')
-		.replaceAll('кт', 'ӄ')
+			.replaceAll('Вг', 'Ӷ')
+			.replaceAll('вг', 'ӷ')
 
-		.replaceAll('Уе', 'Ү')
-		.replaceAll('уе', 'ү')
+			.replaceAll('Гв', 'Ҕ')
+			.replaceAll('гв', 'ҕ')
 
-		.replaceAll('Ує', 'Ұ')
-		.replaceAll('ує', 'ұ')
+			.replaceAll('Кр', 'Ԟ')
+			.replaceAll('кр', 'ԟ')
 
-		.replaceAll('Зн', 'Ԑ')
-		.replaceAll('зн', 'ԑ')
+			.replaceAll('Кн', 'Ҡ')
+			.replaceAll('кн', 'ҡ')
 
-		.replaceAll('Нч', 'Ӈ')
-		.replaceAll('нч', 'ӈ')
+			.replaceAll('Кц', 'К̆')
+			.replaceAll('кц', 'к̆')
 
-		.replaceAll('Чн', 'Ԩ')
-		.replaceAll('чн', 'ԩ')
+			.replaceAll('Кв', '')
+			.replaceAll('кв', '')
 
-		.replaceAll('Хж', 'Ӿ')
-		.replaceAll('хж', 'ӿ')
+			.replaceAll('Вк', 'К̑')
+			.replaceAll('вк', 'к̑')
 
-		.replaceAll('Вл', 'Ԝ')
-		.replaceAll('вл', 'ԝ')
+			.replaceAll('Кл', 'Ҟ')
+			.replaceAll('кл', 'ҟ')
 
-		.replaceAll('Уа', 'Ӳ')
-		.replaceAll('уа', 'ӳ')
+			.replaceAll('Кт', 'Ӄ')
+			.replaceAll('кт', 'ӄ')
 
-		.replaceAll(/Є[јй]/gu, 'Є̈')
-		.replaceAll(/є[јй]/gu, 'є̈')
+			.replaceAll('Уе', 'Ү')
+			.replaceAll('уе', 'ү')
 
-		.replaceAll(/І[јй]/gu, 'Ҋ')
-		.replaceAll(/і[јй]/gu, 'ҋ')
+			.replaceAll('Ує', 'Ұ')
+			.replaceAll('ує', 'ұ')
 
-		.replaceAll(/А[јй]/gu, 'Ӓ')
-		.replaceAll(/а[јй]/gu, 'ӓ')
+			.replaceAll('Зн', 'Ԑ')
+			.replaceAll('зн', 'ԑ')
 
-		.replaceAll(/И[јй]/gu, 'Ӥ')
-		.replaceAll(/и[јй]/gu, 'ӥ')
+			.replaceAll('Нч', 'Ӈ')
+			.replaceAll('нч', 'ӈ')
 
-		.replaceAll(/У[јй]/gu, 'Ӱ')
-		.replaceAll(/у[јй]/gu, 'ӱ')
+			.replaceAll('Чн', 'Ԩ')
+			.replaceAll('чн', 'ԩ')
 
-		.replaceAll(/Е[јй]/gu, 'Ё')
-		.replaceAll(/е[јй]/gu, 'ё')
+			.replaceAll('Хж', 'Ӿ')
+			.replaceAll('хж', 'ӿ')
 
-		.replaceAll(/Ю[јй]/gu, 'Ю')
-		.replaceAll(/ю[јй]/gu, 'ю̈')
+			.replaceAll('Вл', 'Ԝ')
+			.replaceAll('вл', 'ԝ')
 
-		.replaceAll(/Я[јй]/gu, 'Я̈')
-		.replaceAll(/я[јй]/gu, 'я̈')
+			.replaceAll('Уа', 'Ӳ')
+			.replaceAll('уа', 'ӳ')
 
-		.replaceAll('Ол', 'Ѽл')
-		.replaceAll('ол', 'ѽл')
+			.replaceAll(/Є[јй]/gu, 'Є̈')
+			.replaceAll(/є[јй]/gu, 'є̈')
 
-		.replaceAll(/О[јй]/gu, 'Ӧ')
-		.replaceAll(/о[јй]/gu, 'ӧ')
+			.replaceAll(/І[јй]/gu, 'Ҋ')
+			.replaceAll(/і[јй]/gu, 'ҋ')
 
-		.replaceAll('Цн', '')
-		.replaceAll('цн', '')
+			.replaceAll(/А[јй]/gu, 'Ӓ')
+			.replaceAll(/а[јй]/gu, 'ӓ')
 
-		.replaceAll('Цм', 'Ꙡ')
-		.replaceAll('цм', 'ꙡ')
+			.replaceAll(/И[јй]/gu, 'Ӥ')
+			.replaceAll(/и[јй]/gu, 'ӥ')
 
-		.replaceAll('Ор', 'Ꙍр')
-		.replaceAll('ор', 'ꙍр')
+			.replaceAll(/У[јй]/gu, 'Ӱ')
+			.replaceAll(/у[јй]/gu, 'ӱ')
 
-		.replaceAll('Кх', 'Қ')
-		.replaceAll('кх', 'қ')
+			.replaceAll(/Е[јй]/gu, 'Ё')
+			.replaceAll(/е[јй]/gu, 'ё')
 
-		.replaceAll('Жр', 'Җ')
-		.replaceAll('жр', 'җ')
+			.replaceAll(/Ю[јй]/gu, 'Ю')
+			.replaceAll(/ю[јй]/gu, 'ю̈')
 
-		.replaceAll('Зл', 'Ҙ')
-		.replaceAll('зл', 'ҙ')
+			.replaceAll(/Я[јй]/gu, 'Я̈')
+			.replaceAll(/я[јй]/gu, 'я̈')
 
-		.replaceAll('Лм', 'Ԯ')
-		.replaceAll('лм', 'ԯ')
+			.replaceAll('Ол', 'Ѽл')
+			.replaceAll('ол', 'ѽл')
 
-		.replaceAll('Нз', 'Ң')
-		.replaceAll('нз', 'ң')
+			.replaceAll(/О[јй]/gu, 'Ӧ')
+			.replaceAll(/о[јй]/gu, 'ӧ')
 
-		.replaceAll('Пл', 'Ԥ')
-		.replaceAll('пл', 'ԥ')
+			.replaceAll('Цн', '')
+			.replaceAll('цн', '')
 
-		.replaceAll('Св', 'Ҫ')
-		.replaceAll('св', 'ҫ')
+			.replaceAll('Цм', 'Ꙡ')
+			.replaceAll('цм', 'ꙡ')
 
-		.replaceAll('Тк', 'Ҭ')
-		.replaceAll('тк', 'ҭ')
+			.replaceAll('Ор', 'Ꙍр')
+			.replaceAll('ор', 'ꙍр')
 
-		.replaceAll('Хт', 'Ҳ')
-		.replaceAll('хт', 'ҳ')
+			.replaceAll('Кх', 'Қ')
+			.replaceAll('кх', 'қ')
 
-		.replaceAll('Хш', 'Ԧ')
-		.replaceAll('хш', 'ԧ')
+			.replaceAll('Жр', 'Җ')
+			.replaceAll('жр', 'җ')
 
-		.replaceAll('Хм', '')
-		.replaceAll('хм', '')
+			.replaceAll('Зл', 'Ҙ')
+			.replaceAll('зл', 'ҙ')
 
-		.replaceAll('Чм', 'Ҷ')
-		.replaceAll('чм', 'ҷ')
+			.replaceAll('Лм', 'Ԯ')
+			.replaceAll('лм', 'ԯ')
 
-		.replaceAll('Ҷаю', 'Ҷ̈а')
-		.replaceAll('ҷаю', 'ҷ̈а')
+			.replaceAll('Нз', 'Ң')
+			.replaceAll('нз', 'ң')
 
-		.replaceAll('Мч', 'Ӌ')
-		.replaceAll('мч', 'ӌ')
+			.replaceAll('Пл', 'Ԥ')
+			.replaceAll('пл', 'ԥ')
 
-		.replaceAll('Ч̣', 'Чх')
-		.replaceAll('ч̣', 'чх')
+			.replaceAll('Св', 'Ҫ')
+			.replaceAll('св', 'ҫ')
 
-		.replaceAll('Ҷах', 'Ҷ̣а')
-		.replaceAll('ҷах', 'ҷ̣а')
+			.replaceAll('Тк', 'Ҭ')
+			.replaceAll('тк', 'ҭ')
 
-		.replaceAll('Шл', 'Ԡ')
-		.replaceAll('шл', 'ԡ')
+			.replaceAll('Хт', 'Ҳ')
+			.replaceAll('хт', 'ҳ')
 
-		.replaceAll('Пр', 'Ҧ')
-		.replaceAll('пр', 'ҧ')
+			.replaceAll('Хш', 'Ԧ')
+			.replaceAll('хш', 'ԧ')
 
-		.replaceAll('Тр', 'Ꚋ')
-		.replaceAll('тр', 'ꚋ')
+			.replaceAll('Хм', '')
+			.replaceAll('хм', '')
 
-		.replaceAll('Лф', 'Ӆ')
-		.replaceAll('лф', 'ӆ')
+			.replaceAll('Чм', 'Ҷ')
+			.replaceAll('чм', 'ҷ')
 
-		.replaceAll('Юв', 'Ю̆')
-		.replaceAll('юв', 'ю̆')
+			.replaceAll('Ҷаю', 'Ҷ̈а')
+			.replaceAll('ҷаю', 'ҷ̈а')
 
-		.replaceAll('Мр', 'Ӎ')
-		.replaceAll('мр', 'ӎ')
+			.replaceAll('Мч', 'Ӌ')
+			.replaceAll('мч', 'ӌ')
 
-		.replaceAll('Нк', 'Ӊ')
-		.replaceAll('нк', 'ӊ')
+			.replaceAll('Ч̣', 'Чх')
+			.replaceAll('ч̣', 'чх')
 
-		.replaceAll('Хл', 'Ӽ')
-		.replaceAll('хл', 'ӽ')
+			.replaceAll('Ҷах', 'Ҷ̣а')
+			.replaceAll('ҷах', 'ҷ̣а')
 
-		.replaceAll('Лк', 'Ԓ')
-		.replaceAll('лк', 'ԓ')
+			.replaceAll('Шл', 'Ԡ')
+			.replaceAll('шл', 'ԡ')
 
-		.replaceAll('Еа', 'Ӗ')
-		.replaceAll('еа', 'ӗ')
+			.replaceAll('Пр', 'Ҧ')
+			.replaceAll('пр', 'ҧ')
 
-		.replaceAll('Гх', '')
-		.replaceAll('гх', '')
+			.replaceAll('Тр', 'Ꚋ')
+			.replaceAll('тр', 'ꚋ')
 
-		.replaceAll('Хн', '')
-		.replaceAll('хн', '');
+			.replaceAll('Лф', 'Ӆ')
+			.replaceAll('лф', 'ӆ')
+
+			.replaceAll('Юв', 'Ю̆')
+			.replaceAll('юв', 'ю̆')
+
+			.replaceAll('Мр', 'Ӎ')
+			.replaceAll('мр', 'ӎ')
+
+			.replaceAll('Нк', 'Ӊ')
+			.replaceAll('нк', 'ӊ')
+
+			.replaceAll('Хл', 'Ӽ')
+			.replaceAll('хл', 'ӽ')
+
+			.replaceAll('Лк', 'Ԓ')
+			.replaceAll('лк', 'ԓ')
+
+			.replaceAll('Еа', 'Ӗ')
+			.replaceAll('еа', 'ӗ')
+
+			.replaceAll('Гх', '')
+			.replaceAll('гх', '')
+
+			.replaceAll('Хн', '')
+			.replaceAll('хн', '')
+	);
 }
 
 function endOfWordTo(str) {
