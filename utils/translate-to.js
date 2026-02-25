@@ -152,8 +152,8 @@ function replaceTo(str) {
 			.replaceAll(/Дв[іяєю]/gu, (m) => '' + m[2])
 			.replaceAll(/дв[іяєю]/gu, (m) => '' + m[2])
 
-			.replaceAll('Дді', 'Ђ̄')
-			.replaceAll('дді', 'ђ̄')
+			.replaceAll('Дді', 'Ђ̄і')
+			.replaceAll('дді', 'ђ̄і')
 
 			.replaceAll('Ді', 'Ђі')
 			.replaceAll('ді', 'ђі')
