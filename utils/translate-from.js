@@ -225,8 +225,8 @@ function replaceFrom(str) {
 			.replaceAll('Ҹ', 'Чж')
 			.replaceAll('ҹ', 'чж')
 
-			.replaceAll(/[Ћ]/, 'Ч')
-			.replaceAll(/[ћ]/, 'ч')
+			.replaceAll(/[Ћ]/gu, 'Ч')
+			.replaceAll(/[ћ]/gu, 'ч')
 
 			.replaceAll('Ө', 'Оє')
 			.replaceAll('ө', 'оє')
