@@ -493,8 +493,8 @@ function replaceFrom(str) {
 		.replaceAll('Ҷ', 'Чм')
 		.replaceAll('ҷ', 'чм')
 
-		.replaceAll('Ӷ', 'Вг')
-		.replaceAll('ӷ', 'вг')
+		.replaceAll('Ӷ', 'Гх')
+		.replaceAll('ӷ', 'гх')
 
 		.replaceAll('Ӌ', 'Чл')
 		.replaceAll('ӌ', 'чл')
@@ -529,8 +529,8 @@ function replaceFrom(str) {
 		.replaceAll('Ԓ', 'Лк')
 		.replaceAll('ԓ', 'лк')
 
-		.replaceAll('', 'Гх')
-		.replaceAll('', 'гх')
+		.replaceAll('', 'Гд')
+		.replaceAll('', 'гд')
 
 		.replaceAll('Ꞵ', 'Бл')
 		.replaceAll('ꞵ', 'бл')
