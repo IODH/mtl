@@ -7,6 +7,23 @@ function replaceTo(str) {
 			(m) => m[0] + 'ҍ' + m[1],
 		)
 
+		.replaceAll('Льо', 'Љӏ')
+		.replaceAll('льо', 'љӏ')
+
+		.replaceAll('Ньо', 'Њӏ')
+		.replaceAll('ньо', 'њӏ')
+
+		.replaceAll('Тьо', 'Ᲊӏ')
+		.replaceAll('тьо', 'ᲊӏ')
+
+		.replaceAll('Дьо', 'Ԁӏ')
+		.replaceAll('дьо', 'ԁӏ')
+
+		.replaceAll('Цьо', `ӏ`)
+		.replaceAll('цьо', `ӏ`)
+
+		.replaceAll('ьо', 'ӏ')
+
 		.replaceAll('Ць', '')
 		.replaceAll('ць', '')
 
@@ -77,23 +94,6 @@ function replaceTo(str) {
 
 		.replaceAll('Фт', 'Ѳ')
 		.replaceAll('фт', 'ѳ')
-
-		.replaceAll('Льо', 'Љӏ')
-		.replaceAll('льо', 'љӏ')
-
-		.replaceAll('Ньо', 'Њӏ')
-		.replaceAll('ньо', 'њӏ')
-
-		.replaceAll('Тьо', 'Ᲊӏ')
-		.replaceAll('тьо', 'ᲊӏ')
-
-		.replaceAll('Дьо', 'Ԁӏ')
-		.replaceAll('дьо', 'ԁӏ')
-
-		.replaceAll('Цьо', `ӏ`)
-		.replaceAll('цьо', `ӏ`)
-
-		.replaceAll('ьо', 'ӏ')
 
 		.replaceAll('Дн', 'Ԁ')
 		.replaceAll('дн', 'ԁ')
