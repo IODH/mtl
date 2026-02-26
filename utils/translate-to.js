@@ -51,8 +51,11 @@ function replaceTo(str) {
 		.replaceAll('Дз', 'Ꚉ')
 		.replaceAll('дз', 'ꚉ')
 
-		.replaceAll('Йоу', 'І̵Ꙋ')
-		.replaceAll('йоу', 'І̵ꙋ')
+		.replaceAll('Йов', '')
+		.replaceAll('йов', '')
+
+		.replaceAll('Йоу', '')
+		.replaceAll('йоу', '')
 
 		.replaceAll('Оу', 'Ꙋ')
 		.replaceAll('оу', 'ꙋ')
@@ -133,6 +136,9 @@ function replaceTo(str) {
 
 		.replaceAll('Ян', 'Ѩн')
 		.replaceAll('ян', 'ѩн')
+
+		.replaceAll('Іон', 'н')
+		.replaceAll('іон', 'н')
 
 		.replaceAll('Йон', 'Ѭн')
 		.replaceAll('йон', 'ѭн')
@@ -703,6 +709,9 @@ function replaceTo(str) {
 
 		.replaceAll('Іо', 'Ҩ')
 		.replaceAll('іо', 'ҩ')
+
+		.replaceAll('Іу', '')
+		.replaceAll('іу', '')
 
 		.replaceAll(/дд|тт|зз|сс|цц|лл|нн|жж|шш|рр|вв|кк/gu, (m) => m[0] + '̄')
 		.replaceAll(/Дд|Тт|Зз|Сс|Цц|Лл|Нн|Жж|Шш|Рр|Вв|Кк/gu, (m) => m[0] + '̄');
