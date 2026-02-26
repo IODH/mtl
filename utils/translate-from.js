@@ -221,8 +221,14 @@ function replaceFrom(str) {
 		.replaceAll('Ҏ', 'Рт')
 		.replaceAll('ҏ', 'рт')
 
-		.replaceAll('Ӗ', 'Еа')
-		.replaceAll('ӗ', 'еа')
+		.replaceAll('', 'Зна')
+		.replaceAll('', 'зна')
+
+		.replaceAll('', 'Еа')
+		.replaceAll('', 'еа')
+
+		.replaceAll('Ӗ', 'Еу')
+		.replaceAll('ӗ', 'еу')
 
 		.replaceAll('Ҹ', 'Чж')
 		.replaceAll('ҹ', 'чж')
