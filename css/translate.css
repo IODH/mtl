@@ -50,7 +50,7 @@ body {
 .translatedText {
 	margin-top: 2rem;
 	text-align: center;
-	width: 300px;
+	width: max-content;
 }
 .translatedText div {
 	background: white;
