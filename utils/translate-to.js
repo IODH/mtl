@@ -486,6 +486,30 @@ function replaceTo(str) {
 		.replaceAll('Зн', 'Ԑ')
 		.replaceAll('зн', 'ԑ')
 
+		.replaceAll('Дх', '')
+		.replaceAll('дх', '')
+
+		.replaceAll('Оа', '')
+		.replaceAll('оа', '')
+
+		.replaceAll('Ої', '')
+		.replaceAll('ої', '')
+
+		.replaceAll('Уї', '')
+		.replaceAll('уї', '')
+
+		.replaceAll('Сх', '')
+		.replaceAll('сх', '')
+
+		.replaceAll('Сл', '')
+		.replaceAll('сл', '')
+
+		.replaceAll('Іе', '')
+		.replaceAll('іе', '')
+
+		.replaceAll('Ґр', '')
+		.replaceAll('ґр', '')
+
 		.replaceAll('Нч', 'Ӈ')
 		.replaceAll('нч', 'ӈ')
 
