@@ -737,8 +737,8 @@ function replaceTo(str) {
 		.replaceAll(/Я[јй]/gu, 'Я̈')
 		.replaceAll(/я[јй]/gu, 'я̈')
 
-		.replaceAll('Іо', 'Ҩ')
-		.replaceAll('іо', 'ҩ')
+		.replaceAll('Хп', 'Ҩ')
+		.replaceAll('хп', 'ҩ')
 
 		.replaceAll('Іу', '')
 		.replaceAll('іу', '')
