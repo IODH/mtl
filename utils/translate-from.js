@@ -161,8 +161,8 @@ function replaceFrom(str) {
 		.replaceAll('Ѳ', 'Фт')
 		.replaceAll('ѳ', 'фт')
 
-		.replaceAll('Ҩ', 'Іо')
-		.replaceAll('ҩ', 'іо')
+		.replaceAll('Ҩ', 'Хп')
+		.replaceAll('ҩ', 'хп')
 
 		.replaceAll('Ѭ', 'Йо')
 		.replaceAll('ѭ', 'йо')
