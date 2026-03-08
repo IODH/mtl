@@ -33,8 +33,8 @@ function replaceFrom(str) {
 		.replaceAll('Ӧ̄', 'Ойо')
 		.replaceAll('ӧ̄', 'Ойо')
 
-		.replaceAll(/(Ё|Ӭ)/gu, 'Ей')
-		.replaceAll(/(ё|ӭ)/gu, 'ей')
+		.replaceAll(/(Ё|Ӭ|Ѣ̈)/gu, 'Ей')
+		.replaceAll(/(ё|ӭ|ѣ̈)/gu, 'ей')
 
 		.replaceAll('Ӓ', 'Ай')
 		.replaceAll('ӓ', 'ай')
