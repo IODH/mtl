@@ -53,7 +53,7 @@ body {
 	text-align: center;
 	width: 300px;
 	height: max-content;
-	font-size: 25px;
+	font-size: 1rem;
 }
 .translatedText div {
 	background: white;
