@@ -32,7 +32,7 @@ body {
 	resize: vertical;
 	min-height: 100px;
 	padding: 0.5rem;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 #submit {
@@ -47,11 +47,13 @@ body {
 #submit:hover {
 	background-color: rgb(190, 190, 190);
 }
+
 .translatedText {
 	margin-top: 2rem;
 	text-align: center;
 	width: 300px;
 	height: max-content;
+	font-size: 40px;
 }
 .translatedText div {
 	background: white;
