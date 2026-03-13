@@ -204,7 +204,7 @@ function replaceTo(str) {
 		.replaceAll(/ч[аеу]/gu, (m) => '' + m[1])
 
 		.replaceAll('Оєв', 'Ө̆')
-		.replaceAll('оєв', 'Ө̆')
+		.replaceAll('оєв', 'ө̆')
 
 		.replaceAll('Ин', 'Ꙟн')
 		.replaceAll('ин', 'ꙟн')
