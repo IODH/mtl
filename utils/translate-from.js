@@ -57,10 +57,13 @@ function replaceFrom(str) {
 		.replaceAll('Ҋ', 'Ій')
 		.replaceAll('ҋ', 'ій')
 
-		.replaceAll('Ӥ', 'Ий')
+		.replaceAll(/(Ӥ|Ӹ)/gu, 'Ий')
 		.replaceAll(/(ӥ|ӹ)/gu, 'ий')
 
-		.replaceAll('ы̆', 'ив')
+		.replaceAll('Ы̆', 'Иє')
+		.replaceAll('ы̆', 'иє')
+
+		.replaceAll('Ы̄', 'Ию')
 		.replaceAll('ы̄', 'ию')
 
 		.replaceAll(/[ᵸҍꙏ]/gu, '')
