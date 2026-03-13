@@ -51,9 +51,9 @@ body {
 .translatedText {
 	margin-top: 2rem;
 	text-align: center;
-	width: 800px;
+	width: 400px;
 	height: max-content;
-	font-size: 32px;
+	font-size: 25px;
 }
 .translatedText div {
 	background: white;
