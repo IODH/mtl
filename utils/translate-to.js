@@ -512,6 +512,9 @@ function replaceTo(str) {
 		.replaceAll('Цх', '')
 		.replaceAll('цх', '')
 
+		.replaceAll('Ає', 'Ӑ')
+		.replaceAll('ає', 'ӑ')
+
 		.replaceAll('Цн', 'Ꙡ')
 		.replaceAll('цн', 'ꙡ')
 
@@ -763,6 +766,12 @@ function replaceTo(str) {
 
 		.replaceAll('Ін', 'Ꙛн')
 		.replaceAll('ін', 'ꙛн')
+
+		.replaceAll('Їн', 'н')
+		.replaceAll('їн', 'н')
+
+		.replaceAll('Ау', '')
+		.replaceAll('ау', '')
 
 		.replaceAll('Хп', 'Ҩ')
 		.replaceAll('хп', 'ҩ')

@@ -89,6 +89,15 @@ function replaceFrom(str) {
 		.replaceAll('Ꙗ', 'Іа')
 		.replaceAll('ꙗ', 'іа')
 
+		.replaceAll('Ӑ', 'Ає')
+		.replaceAll('ӑ', 'ає')
+
+		.replaceAll('', 'Ау')
+		.replaceAll('', 'ау')
+
+		.replaceAll('', 'Їн')
+		.replaceAll('', 'їн')
+
 		.replaceAll('Ѥ', 'Іє')
 		.replaceAll('ѥ', 'іє')
 
