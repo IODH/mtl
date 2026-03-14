@@ -771,7 +771,7 @@ function replaceTo(str) {
 		.replaceAll('їн', 'н')
 
 		.replaceAll('Ау', '')
-		.replaceAll('ау', '')
+		.replaceAll('ау', '')
 
 		.replaceAll('Хп', 'Ҩ')
 		.replaceAll('хп', 'ҩ')
