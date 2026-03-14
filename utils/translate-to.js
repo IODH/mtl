@@ -383,6 +383,9 @@ function replaceTo(str) {
 		.replaceAll('Ює', 'Ӫ')
 		.replaceAll('ює', 'ӫ')
 
+		.replaceAll('Юе', 'Ө̄')
+		.replaceAll('юе', 'ө̄')
+
 		.replaceAll('Тет', 'Θ')
 		.replaceAll('тет', 'ϑ')
 
