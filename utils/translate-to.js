@@ -203,9 +203,6 @@ function replaceTo(str) {
 		.replaceAll(/Ч[аеу]/gu, (m) => '' + m[1])
 		.replaceAll(/ч[аеу]/gu, (m) => '' + m[1])
 
-		.replaceAll('Оєв', 'Ө̆')
-		.replaceAll('оєв', 'ө̆')
-
 		.replaceAll('Ин', 'Ꙟн')
 		.replaceAll('ин', 'ꙟн')
 
@@ -238,9 +235,6 @@ function replaceTo(str) {
 
 		.replaceAll('Чь', 'Ћь')
 		.replaceAll('чь', 'ћь')
-
-		.replaceAll('Оє', 'Ө')
-		.replaceAll('оє', 'ө')
 
 		.replaceAll('Хв', 'Ꚕ')
 		.replaceAll('хв', 'ꚕ')
@@ -377,14 +371,20 @@ function replaceTo(str) {
 		.replaceAll('Яя', 'Я̄')
 		.replaceAll('яя', 'я̄')
 
-		.replaceAll('Ое', 'О̆')
-		.replaceAll('ое', 'о̆')
+		.replaceAll('Ое', 'Ө')
+		.replaceAll('ое', 'ө')
 
 		.replaceAll('Ює', 'Ӫ')
 		.replaceAll('ює', 'ӫ')
 
 		.replaceAll('Юе', 'Ө̄')
 		.replaceAll('юе', 'ө̄')
+
+		.replaceAll('Оєв', 'Ө̆')
+		.replaceAll('оєв', 'ө̆')
+
+		.replaceAll('Оя', 'О̆')
+		.replaceAll('оя', 'о̆')
 
 		.replaceAll('Тет', 'Θ')
 		.replaceAll('тет', 'ϑ')
