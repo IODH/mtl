@@ -578,8 +578,8 @@ function replaceTo(str) {
 		.replaceAll('Лф', 'Ӆ')
 		.replaceAll('лф', 'ӆ')
 
-		.replaceAll('Юв', 'Ю̆')
-		.replaceAll('юв', 'ю̆')
+		.replaceAll('Юї', 'Ю̆')
+		.replaceAll('юї', 'ю̆')
 
 		.replaceAll('Мр', 'Ӎ')
 		.replaceAll('мр', 'ӎ')

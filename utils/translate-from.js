@@ -71,8 +71,8 @@ function replaceFrom(str) {
 		.replaceAll('Ю̄', 'Юю')
 		.replaceAll('ю̄', 'юю')
 
-		.replaceAll('Ю̆', 'Юв')
-		.replaceAll('ю̆', 'юв')
+		.replaceAll('Ю̆', 'Юї')
+		.replaceAll('ю̆', 'юї')
 
 		.replaceAll('Я̄', 'Яя')
 		.replaceAll('я̄', 'яя')
