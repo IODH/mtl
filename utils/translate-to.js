@@ -734,32 +734,32 @@ function replaceTo(str) {
 		.replaceAll(/Я[јй]/gu, 'Я̈')
 		.replaceAll(/я[јй]/gu, 'я̈')
 
-		.replaceAll(/Іо[нњԋ]/, (m) => '' + m[2])
-		.replaceAll(/іо[нњԋ]/, (m) => '' + m[2])
+		.replaceAll(/Іо[нњԋ]/gu, (m) => '' + m[2])
+		.replaceAll(/іо[нњԋ]/gu, (m) => '' + m[2])
 
-		.replaceAll(/Йо[нњԋ]/, (m) => 'Ѭ' + m[2])
-		.replaceAll(/йо[нњԋ]/, (m) => 'ѭ' + m[2])
+		.replaceAll(/Йо[нњԋ]/gu, (m) => 'Ѭ' + m[2])
+		.replaceAll(/йо[нњԋ]/gu, (m) => 'ѭ' + m[2])
 
-		.replaceAll(/А[нњԋ]/, (m) => 'Ѧ' + m[1])
-		.replaceAll(/а[нњԋ]/, (m) => 'ѧ' + m[1])
+		.replaceAll(/А[нњԋ]/gu, (m) => 'Ѧ' + m[1])
+		.replaceAll(/а[нњԋ]/gu, (m) => 'ѧ' + m[1])
 
-		.replaceAll(/Я[нњԋ]/, (m) => 'Ѩ' + m[1])
-		.replaceAll(/я[нњԋ]/, (m) => 'ѩ' + m[1])
+		.replaceAll(/Я[нњԋ]/gu, (m) => 'Ѩ' + m[1])
+		.replaceAll(/я[нњԋ]/gu, (m) => 'ѩ' + m[1])
 
-		.replaceAll(/О[нњԋ]/, (m) => 'Ѫ' + m[1])
-		.replaceAll(/о[нњԋ]/, (m) => 'ѫ' + m[1])
+		.replaceAll(/О[нњԋ]/gu, (m) => 'Ѫ' + m[1])
+		.replaceAll(/о[нњԋ]/gu, (m) => 'ѫ' + m[1])
 
-		.replaceAll(/Е[нњԋ]/, (m) => 'Ꙙ' + m[1])
-		.replaceAll(/е[нњԋ]/, (m) => 'ꙙ' + m[1])
+		.replaceAll(/Е[нњԋ]/gu, (m) => 'Ꙙ' + m[1])
+		.replaceAll(/е[нњԋ]/gu, (m) => 'ꙙ' + m[1])
 
-		.replaceAll(/Є[нњԋ]/, (m) => 'Ꙝ' + m[1])
-		.replaceAll(/є[нњԋ]/, (m) => 'ꙝ' + m[1])
+		.replaceAll(/Є[нњԋ]/gu, (m) => 'Ꙝ' + m[1])
+		.replaceAll(/є[нњԋ]/gu, (m) => 'ꙝ' + m[1])
 
-		.replaceAll(/І[нњԋ]/, (m) => 'Ꙛ' + m[1])
-		.replaceAll(/і[нњԋ]/, (m) => 'ꙛ' + m[1])
+		.replaceAll(/І[нњԋ]/gu, (m) => 'Ꙛ' + m[1])
+		.replaceAll(/і[нњԋ]/gu, (m) => 'ꙛ' + m[1])
 
-		.replaceAll(/Ї[нњԋ]/, (m) => '' + m[1])
-		.replaceAll(/ї[нњԋ]/, (m) => '' + m[1])
+		.replaceAll(/Ї[нњԋ]/gu, (m) => '' + m[1])
+		.replaceAll(/ї[нњԋ]/gu, (m) => '' + m[1])
 
 		.replaceAll('Ау', '')
 		.replaceAll('ау', '')
