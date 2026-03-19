@@ -550,8 +550,8 @@ function replaceFrom(str) {
 		.replaceAll('Δ', 'Др')
 		.replaceAll('δ', 'др')
 
-		.replaceAll('Ԡ', 'Шл')
-		.replaceAll('ԡ', 'шл')
+		.replaceAll('Ԡ', 'Лч')
+		.replaceAll('ԡ', 'лч')
 
 		.replaceAll('Ԣ', 'Нт')
 		.replaceAll('ԣ', 'нт')

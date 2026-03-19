@@ -502,8 +502,8 @@ function replaceTo(str) {
 		.replaceAll('Ҷах', 'Ҷ̣а')
 		.replaceAll('ҷах', 'ҷ̣а')
 
-		.replaceAll('Шл', 'Ԡ')
-		.replaceAll('шл', 'ԡ')
+		.replaceAll('Лч', 'Ԡ')
+		.replaceAll('лч', 'ԡ')
 
 		.replaceAll('Тр', 'Ꚋ')
 		.replaceAll('тр', 'ꚋ')
