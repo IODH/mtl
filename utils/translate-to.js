@@ -121,8 +121,14 @@ function replaceTo(str) {
 		.replaceAll('Хс', '')
 		.replaceAll('хс', '')
 
-		.replaceAll('Ст', 'Ѕ')
-		.replaceAll('ст', 'ѕ')
+		.replaceAll('Ст', '')
+		.replaceAll('ст', '')
+
+		.replaceAll('Cтр', 'Ѕ')
+		.replaceAll('стр', 'ѕ')
+
+		.replaceAll('Cп', 'Ꙅ')
+		.replaceAll('сп', 'ꙅ')
 
 		.replaceAll('Нг', 'Ҥ')
 		.replaceAll('нг', 'ҥ')
