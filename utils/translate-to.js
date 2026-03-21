@@ -151,8 +151,8 @@ function replaceTo(str) {
 		.replaceAll('Лт', '')
 		.replaceAll('лт', '')
 
-		.replaceAll(/Тл[іяює]/gu, (m) => '' + m[2])
-		.replaceAll(/тл[іяює]/gu, (m) => '' + m[2])
+		.replaceAll(/Тль[іяює]/gu, (m) => '' + m[3])
+		.replaceAll(/тль[іяює]/gu, (m) => '' + m[3])
 
 		.replaceAll('Нґ', 'Ҥ̂')
 		.replaceAll('нґ', 'ҥ̂')
