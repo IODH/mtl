@@ -139,6 +139,21 @@ function replaceTo(str) {
 		.replaceAll('Лг', 'Ꙥ')
 		.replaceAll('лг', 'ꙥ')
 
+		.replaceAll('Лп', '')
+		.replaceAll('лп', '')
+
+		.replaceAll('Тл', '')
+		.replaceAll('тл', '')
+
+		.replaceAll('Тљ', '')
+		.replaceAll('тљ', '')
+
+		.replaceAll('Лт', '')
+		.replaceAll('лт', '')
+
+		.replaceAll(/Тл[іяює]/gu, (m) => '' + m[2])
+		.replaceAll(/тл[іяює]/gu, (m) => '' + m[2])
+
 		.replaceAll('Нґ', 'Ҥ̂')
 		.replaceAll('нґ', 'ҥ̂')
 
