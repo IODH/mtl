@@ -35,8 +35,8 @@ function replaceTo(str) {
 
 		.replaceAll('Ть', 'Ᲊ')
 		.replaceAll('ть', 'ᲊ')
-		
-    .replaceAll('Дь', '')
+
+		.replaceAll('Дь', '')
 		.replaceAll('дь', '')
 
 		.replaceAll(/ь[яюєї]/gu, (m) => 'ьˮ' + m[1])
@@ -142,24 +142,23 @@ function replaceTo(str) {
 		.replaceAll('Лг', 'Ꙥ')
 		.replaceAll('лг', 'ꙥ')
 
-		.replaceAll('Лп', '') 
+		.replaceAll('Лп', '')
 		.replaceAll('лп', '')
- 
-		.replaceAll(/Тль[іяює]/gu, (m) => '' + m[3])
-		.replaceAll(/тль[іяює]/gu, (m) => '' + m[3])
 
 		.replaceAll('Тл', '')
 		.replaceAll('тл', '')
+
+		.replaceAll(/Тль[іяює]/gu, (m) => '' + m[3])
+		.replaceAll(/тль[іяює]/gu, (m) => '' + m[3])
 
 		.replaceAll('Тљ', '')
 		.replaceAll('тљ', '')
 
 		.replaceAll('Лт', '')
 		.replaceAll('лт', '')
-		
-    .replaceAll('Лр', '')
-		.replaceAll('лр', '')
 
+		.replaceAll('Лр', '')
+		.replaceAll('лр', '')
 
 		.replaceAll('Нґ', 'Ҥ̂')
 		.replaceAll('нґ', 'ҥ̂')
