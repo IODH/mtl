@@ -7,6 +7,21 @@ function replaceTo(str) {
 			(m) => m[0] + 'ҍ' + m[1],
 		)
 
+		.replaceAll('Лль', 'Љ̄')
+		.replaceAll('лль', 'љ̄')
+
+		.replaceAll('Ннь', 'Њ̄')
+		.replaceAll('ннь', 'њ̄')
+
+		.replaceAll('Тть', 'Ᲊ̄')
+		.replaceAll('тть', 'Ᲊ̄')
+
+		.replaceAll('Ддь', '̄')
+		.replaceAll('ддь', '̄')
+
+		.replaceAll('Цць', '̄')
+		.replaceAll('цць', '̄')
+
 		.replaceAll('Льо', 'Љӏ')
 		.replaceAll('льо', 'љӏ')
 
