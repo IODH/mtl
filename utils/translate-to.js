@@ -401,8 +401,8 @@ function replaceTo(str) {
 		.replaceAll('Гр', 'Ғ')
 		.replaceAll('гр', 'ғ')
 
-		.replaceAll('Ґр', '')
-		.replaceAll('ґр', '')
+		.replaceAll('Гт', '')
+		.replaceAll('гт', '')
 
 		.replaceAll('Гм', '')
 		.replaceAll('гм', '')
