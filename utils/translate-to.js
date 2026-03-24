@@ -383,6 +383,9 @@ function replaceTo(str) {
 		.replaceAll('Рк', 'Р̌')
 		.replaceAll('рк', 'р̌')
 
+		.replaceAll('Згр', 'Ғ̌')
+		.replaceAll('згр', 'ғ̌')
+
 		.replaceAll(/Зв|Зг|Зд|Зс|Зт|Зх/gu, (m) => m[1].toUpperCase() + '̌')
 		.replaceAll(/зв|зг|зд|зс|зт|зх/gu, (m) => m[1] + '̌')
 
@@ -394,9 +397,6 @@ function replaceTo(str) {
 
 		.replaceAll('Гн', 'Ӻ')
 		.replaceAll('гн', 'ӻ')
-
-		.replaceAll('Згр', 'Ғ̌')
-		.replaceAll('згр', 'ғ̌')
 
 		.replaceAll('Гр', 'Ғ')
 		.replaceAll('гр', 'ғ')
