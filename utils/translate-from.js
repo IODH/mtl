@@ -580,6 +580,15 @@ function replaceFrom(str) {
 		.replaceAll('Ӷ', 'Гд')
 		.replaceAll('ӷ', 'гд')
 
+		.replaceAll('', 'Ґр')
+		.replaceAll('', 'ґр')
+
+		.replaceAll('', 'Гм')
+		.replaceAll('', 'гм')
+
+		.replaceAll('', 'Чб')
+		.replaceAll('', 'чб')
+
 		.replaceAll('Ӌ', 'Чл')
 		.replaceAll('ӌ', 'чл')
 
