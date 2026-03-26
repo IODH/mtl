@@ -649,7 +649,7 @@ function replaceTo(str) {
 		.replaceAll(/[бпвмфБПВМФ]ҍє/gu, (m) => m[0] + 'ҍꙓ')
 
 		.replaceAll(/[бпвмфБПВМФ]ию/gu, (m) => m[0] + 'ы̄')
-		.replaceAll(/[бпвмфБПВМФ]ий/gu, (m) => m[0] + 'ӹ')
+		.replaceAll(/[бпвмфБПВМФ]ӥ/gu, (m) => m[0] + 'ӹ')
 		.replaceAll(/[бпвмфБПВМФ]иє/gu, (m) => m[0] + 'ы̆')
 		.replaceAll(/[бпвмфБПВМФ]ил/gu, (m) => m[0] + 'ыл')
 		.replaceAll(/[бпвмфБПВМФ]и/gu, (m) => m[0] + 'ꙑ')
@@ -657,43 +657,43 @@ function replaceTo(str) {
 		.replaceAll(/[бпвмфБПВМФ]ӓ̄/gu, (m) => m[0] + 'ӛ̄')
 		.replaceAll(/[бпвмфБПВМФ]а̄/gu, (m) => m[0] + 'ә̄')
 		.replaceAll(/[бпвмфБПВМФ]а/gu, (m) => m[0] + 'ә')
-		.replaceAll(/[бпвмфБПВМФ]ай/gu, (m) => m[0] + 'ӛ')
+		.replaceAll(/[бпвмфБПВМФ]ӓ/gu, (m) => m[0] + 'ӛ')
 		.replaceAll(/[бпвмфБПВМФ]я/gu, (m) => m[0] + 'ҍә̃')
 
 		.replaceAll(/[бпвмфБПВМФ]й/gu, (m) => m[0] + 'ҋ')
 
 		.replaceAll(/Є[бпвмф]/gu, (m) => 'Ꙓ' + m[1])
 		.replaceAll(/Е[бпвмф]/gu, (m) => 'Ѣ' + m[1])
-		.replaceAll(/Ей[бпвмф]/gu, (m) => 'Ѣ̈' + m[2])
+		.replaceAll(/Ё[бпвмф]/gu, (m) => 'Ѣ̈' + m[2])
 
 		.replaceAll(/Ил[бпвмф]/gu, (m) => 'Ыл' + m[2])
 		.replaceAll(/Ию[бпвмф]/gu, (m) => 'Ы̄' + m[2])
-		.replaceAll(/Ий[бпвмф]/gu, (m) => 'Ӹ' + m[2])
+		.replaceAll(/Ӥ[бпвмф]/gu, (m) => 'Ӹ' + m[2])
 		.replaceAll(/Иє[бпвмф]/gu, (m) => 'Ы̆' + m[2])
 		.replaceAll(/И[бпвмф]/gu, (m) => 'Ꙑ' + m[1])
 
 		.replaceAll(/Ӓ̄[бпвмф]/gu, (m) => 'Ӛ̄' + m[1])
 		.replaceAll(/А̄[бпвмф]/gu, (m) => 'Ә̄' + m[1])
 		.replaceAll(/А[бпвмф]/gu, (m) => 'Ә' + m[1])
-		.replaceAll(/Ай[бпвмф]/gu, (m) => 'Ӛ' + m[2])
+		.replaceAll(/Ӓ[бпвмф]/gu, (m) => 'Ӛ' + m[2])
 		.replaceAll(/Я[бпвмф]/gu, (m) => 'Ә̃' + m[1])
 
 		.replaceAll(/Й[бпвмф]/gu, (m) => 'Ҋ' + m[1])
 
 		.replaceAll(/є[бпвмф]/gu, (m) => 'ꙓ' + m[1])
 		.replaceAll(/е[бпвмф]/gu, (m) => 'ѣ' + m[1])
-		.replaceAll(/ей[бпвмф]/gu, (m) => 'ѣ̈' + m[2])
+		.replaceAll(/ё[бпвмф]/gu, (m) => 'ѣ̈' + m[2])
 
 		.replaceAll(/ил[бпвмф]/gu, (m) => 'ы' + m[2])
 		.replaceAll(/ию[бпвмф]/gu, (m) => 'ы̄' + m[2])
-		.replaceAll(/ий[бпвмф]/gu, (m) => 'ӹ' + m[2])
+		.replaceAll(/ӥ[бпвмф]/gu, (m) => 'ӹ' + m[2])
 		.replaceAll(/иє[бпвмф]/gu, (m) => 'ы̆' + m[2])
 		.replaceAll(/и[бпвмф]/gu, (m) => 'ꙑ' + m[1])
 
 		.replaceAll(/ӓ̄[бпвмф]/gu, (m) => 'ӛ̄' + m[1])
 		.replaceAll(/а̄[бпвмф]/gu, (m) => 'ә̄' + m[1])
 		.replaceAll(/а[бпвмф]/gu, (m) => 'ә' + m[1])
-		.replaceAll(/ай[бпвмф]/gu, (m) => 'ӛ' + m[2])
+		.replaceAll(/ӓ[бпвмф]/gu, (m) => 'ӛ' + m[2])
 		.replaceAll(/я[бпвмф]/gu, (m) => 'ә̃' + m[1])
 
 		.replaceAll(/й[бпвмф]/gu, (m) => 'ҋ' + m[1])
