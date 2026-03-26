@@ -1,4 +1,4 @@
-import { consonantLetters } from './constants';
+import { consonantLetters } from './constants.js';
 
 function replaceTo(str) {
 	return str
