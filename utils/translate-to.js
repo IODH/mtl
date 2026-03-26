@@ -212,6 +212,9 @@ function replaceTo(str) {
 		.replaceAll('Еер', 'Ъ̄р')
 		.replaceAll('еер', 'ъ̄р')
 
+		.replaceAll('Ейр', 'р')
+		.replaceAll('ейр', 'р')
+
 		.replaceAll('Єр', 'Ъ̈р')
 		.replaceAll('єр', 'ъ̈р')
 
