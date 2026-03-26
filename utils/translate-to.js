@@ -1,3 +1,5 @@
+import { consonantLetters } from './constants';
+
 function replaceTo(str) {
 	return str
 		.replaceAll(
