@@ -398,8 +398,8 @@ function replaceTo(str) {
 		.replaceAll('Гр', 'Ғ')
 		.replaceAll('гр', 'ғ')
 
-		.replaceAll('Ґр', '')
-		.replaceAll('ґр', '')
+		.replaceAll('Гт', '')
+		.replaceAll('гт', '')
 
 		.replaceAll('Гм', '')
 		.replaceAll('гм', '')
@@ -524,8 +524,8 @@ function replaceTo(str) {
 		.replaceAll('Ор', 'Ꙍр')
 		.replaceAll('ор', 'ꙍр')
 
-		.replaceAll('Þ', 'Тꙍ')
-		.replaceAll('þ', 'тꙍ')
+		.replaceAll('Тꙍ', 'Þ')
+		.replaceAll('тꙍ', 'þ')
 
 		.replaceAll('Кх', 'Қ')
 		.replaceAll('кх', 'қ')
