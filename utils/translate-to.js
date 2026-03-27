@@ -521,11 +521,11 @@ function replaceTo(str) {
 		.replaceAll('Цн', 'Ꙡ')
 		.replaceAll('цн', 'ꙡ')
 
+		.replaceAll('Тор', 'Þор')
+		.replaceAll('тор', 'þор')
+
 		.replaceAll('Ор', 'Ꙍр')
 		.replaceAll('ор', 'ꙍр')
-
-		.replaceAll('Тꙍ', 'Þ')
-		.replaceAll('тꙍ', 'þ')
 
 		.replaceAll('Кх', 'Қ')
 		.replaceAll('кх', 'қ')
