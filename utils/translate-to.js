@@ -197,6 +197,9 @@ function replaceTo(str) {
 		.replaceAll('Яє', 'Ԙ')
 		.replaceAll('яє', 'ԙ')
 
+		.replaceAll('Тор', 'Þор')
+		.replaceAll('тор', 'þор')
+
 		.replaceAll('Рх', 'Ԗ')
 		.replaceAll('рх', 'ԗ')
 
@@ -520,9 +523,6 @@ function replaceTo(str) {
 
 		.replaceAll('Цн', 'Ꙡ')
 		.replaceAll('цн', 'ꙡ')
-
-		.replaceAll('Тор', 'Þор')
-		.replaceAll('тор', 'þор')
 
 		.replaceAll('Ор', 'Ꙍр')
 		.replaceAll('ор', 'ꙍр')
