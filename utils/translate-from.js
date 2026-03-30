@@ -458,6 +458,9 @@ function replaceFrom(str) {
 		.replaceAll('К̆', 'Кц')
 		.replaceAll('к̆', 'кц')
 
+		.replaceAll('Ҝ', 'Кш')
+		.replaceAll('ҝ', 'кш')
+
 		.replaceAll('К̑', 'Вк')
 		.replaceAll('к̑', 'вк')
 
