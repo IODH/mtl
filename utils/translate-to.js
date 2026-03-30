@@ -410,6 +410,9 @@ function replaceTo(str) {
 		.replaceAll('Гд', 'Ӷ')
 		.replaceAll('гд', 'ӷ')
 
+		.replaceAll('Гш', '')
+		.replaceAll('гш', '')
+
 		.replaceAll('Гв', 'Ҕ')
 		.replaceAll('гв', 'ҕ')
 
@@ -433,8 +436,8 @@ function replaceTo(str) {
 
 		.replaceAll('Кц', 'К̆')
 		.replaceAll('кц', 'к̆')
-		
-    .replaceAll('Кш', 'Ҝ')
+
+		.replaceAll('Кш', 'Ҝ')
 		.replaceAll('кш', 'ҝ')
 
 		.replaceAll('Кв', '')
