@@ -197,14 +197,14 @@ function replaceTo(str) {
 		.replaceAll('Яє', 'Ԙ')
 		.replaceAll('яє', 'ԙ')
 
-		.replaceAll('Тор', 'Þор')
-		.replaceAll('тор', 'þор')
-
-		.replaceAll('Твор', 'Ꝥор') //
+		.replaceAll('Твор', 'Ꝥор')
 		.replaceAll('твор', 'ꝥор')
 
 		.replaceAll('Втор', 'Ꝧор')
 		.replaceAll('втор', 'ꝧор')
+
+		.replaceAll('Тор', 'Þор')
+		.replaceAll('тор', 'þор')
 
 		.replaceAll('Рх', 'Ԗ')
 		.replaceAll('рх', 'ԗ')
