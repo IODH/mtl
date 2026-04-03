@@ -200,6 +200,12 @@ function replaceTo(str) {
 		.replaceAll('Тор', 'Þор')
 		.replaceAll('тор', 'þор')
 
+		.replaceAll('Твор', 'Ꝥор') //
+		.replaceAll('твор', 'ꝥор')
+
+		.replaceAll('Втор', 'Ꝧор')
+		.replaceAll('втор', 'ꝧор')
+
 		.replaceAll('Рх', 'Ԗ')
 		.replaceAll('рх', 'ԗ')
 
