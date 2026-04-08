@@ -754,7 +754,7 @@ function replaceTo(str) {
 
 		.replaceAll('Іп', 'Υп')
 		.replaceAll('іп', 'υп')
-		.replaceAll('пі', 'υп')
+		.replaceAll('пҍі', 'пҍυ')
 
 		.replaceAll('Пс', 'Ѱ')
 		.replaceAll('пс', 'ѱ')
