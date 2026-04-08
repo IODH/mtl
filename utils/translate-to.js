@@ -635,11 +635,11 @@ function replaceTo(str) {
 		.replaceAll('Ій', 'Ꙇ')
 		.replaceAll('ій', 'ꙇ')
 
-		.replaceAll('Лям', 'Ƛям')
-		.replaceAll('лям', 'ƛям')
+		.replaceAll('Льям', 'Ƛям')
+		.replaceAll('льям', 'ƛям')
 
-		.replaceAll('Ля', 'Ꟛя')
-		.replaceAll('ля', 'ꟛя')
+		.replaceAll('Лья', 'Ꟛя')
+		.replaceAll('лья', 'ꟛя')
 
 		.replaceAll(/Цць[іюяє]/gu, (m) => '̄' + m[3])
 		.replaceAll(/цць[іюяє]/gu, (m) => '̄' + m[3])
