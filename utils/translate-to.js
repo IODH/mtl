@@ -371,8 +371,11 @@ function replaceTo(str) {
 		.replaceAll('Яя', 'Я̄')
 		.replaceAll('яя', 'я̄')
 
-		.replaceAll('Ое', 'Ө')
-		.replaceAll('ое', 'ө')
+		.replaceAll('Ое', 'Œ')
+		.replaceAll('ое', 'œ')
+
+		.replaceAll('Оє', 'Ө')
+		.replaceAll('оє', 'ө')
 
 		.replaceAll('Ює', 'Ӫ')
 		.replaceAll('ює', 'ӫ')
@@ -383,8 +386,17 @@ function replaceTo(str) {
 		.replaceAll('Оєв', 'Ө̆')
 		.replaceAll('оєв', 'ө̆')
 
-		.replaceAll('Оя', 'О̆')
-		.replaceAll('оя', 'о̆')
+		.replaceAll('Оя', 'Ɔ')
+		.replaceAll('оя', 'ɔ')
+
+		.replaceAll('Лц', 'Λ')
+		.replaceAll('лц', 'ʌ')
+
+		.replaceAll('Лд', 'L')
+		.replaceAll('лд', 'l')
+
+		.replaceAll('Лж', 'Ł')
+		.replaceAll('лж', 'ł')
 
 		.replaceAll('Тет', 'Θ')
 		.replaceAll('тет', 'ϑ')
@@ -727,6 +739,10 @@ function replaceTo(str) {
 		.replaceAll(/я[бпвмф]/gu, (m) => 'ә̃' + m[1])
 
 		.replaceAll(/й[бпвмф]/gu, (m) => 'ҋ' + m[1])
+
+		.replaceAll('Іп', 'Υп')
+		.replaceAll('іп', 'υп')
+		.replaceAll('пі', 'υп')
 
 		.replaceAll('Пс', 'Ѱ')
 		.replaceAll('пс', 'ѱ')
