@@ -556,7 +556,7 @@ function replaceTo(str) {
 
 		.replaceAll('Ор', 'Ꙍр')
 		.replaceAll('ор', 'ꙍр')
-		.replaceAll(/[Рр]о/, 'рꙍ')
+		.replaceAll(/[Рр]о/gu, 'рꙍ')
 
 		.replaceAll('Кх', 'Қ')
 		.replaceAll('кх', 'қ')
