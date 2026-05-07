@@ -649,7 +649,7 @@ function replaceTo(str) {
 		.replaceAll('лья', 'ꟛя')
 
 		.replaceAll('Лла', 'Ꝇ̄а')
-		.replaceAll('лла', 'ꝇ̄f')
+		.replaceAll('лла', 'ꝇ̄а')
 
 		.replaceAll('Ла', 'Ꝇа')
 		.replaceAll('ла', 'ꝇа')
