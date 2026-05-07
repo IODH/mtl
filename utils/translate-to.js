@@ -636,17 +636,17 @@ function replaceTo(str) {
 		.replaceAll('Ій', 'Ꙇ')
 		.replaceAll('ій', 'ꙇ')
 
-		.replaceAll('Ллям', 'Ƛ̄ям')
-		.replaceAll('ллям', 'ƛ̄ям')
+		.replaceAll('Лльям', 'Ƛ̄ям')
+		.replaceAll('лляьм', 'ƛ̄ям')
 
 		.replaceAll('Льям', 'Ƛям')
 		.replaceAll('льям', 'ƛям')
 
-		.replaceAll('Лля', 'Ꟛ̄я')
-		.replaceAll('лля', 'ꟛ̄я')
+		.replaceAll('Ллья', 'Ꟛ̄я')
+		.replaceAll('ллья', 'ꟛ̄я')
 
-		.replaceAll('Ля', 'Ꟛя')
-		.replaceAll('ля', 'ꟛя')
+		.replaceAll('Лья', 'Ꟛя')
+		.replaceAll('лья', 'ꟛя')
 
 		.replaceAll('Лла', 'Ꝇ̄а')
 		.replaceAll('лла', 'ꝇ̄f')
