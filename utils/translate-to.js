@@ -639,8 +639,8 @@ function replaceTo(str) {
 		.replaceAll('Ллям', 'Ƛ̄ям')
 		.replaceAll('ллям', 'ƛ̄ям')
 
-		.replaceAll('Лям', 'Ƛям')
-		.replaceAll('лям', 'ƛям')
+		.replaceAll('Льям', 'Ƛям')
+		.replaceAll('льям', 'ƛям')
 
 		.replaceAll('Лля', 'Ꟛ̄я')
 		.replaceAll('лля', 'ꟛ̄я')
@@ -770,7 +770,7 @@ function replaceTo(str) {
 
 		.replaceAll('Іп', 'Υп')
 		.replaceAll('іп', 'υп')
-		.replaceAll('пі', 'υп')
+		.replaceAll('пҍі', 'пҍυ')
 
 		.replaceAll('Пс', 'Ѱ')
 		.replaceAll('пс', 'ѱ')
