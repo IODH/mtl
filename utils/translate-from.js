@@ -418,8 +418,8 @@ function replaceFrom(str) {
 		.replaceAll('Ꚅ', 'Зж')
 		.replaceAll('ꚅ', 'зж')
 
-		.replaceAll(/[ЈҊ]/, 'Й')
-		.replaceAll(/[јҋ]/, 'й')
+		.replaceAll(/[ЈҊ]/gu, 'Й')
+		.replaceAll(/[јҋ]/gu, 'й')
 
 		.replaceAll('Э̆л', 'Елв')
 		.replaceAll('э̆л', 'елв')
