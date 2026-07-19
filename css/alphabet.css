@@ -1,6 +1,6 @@
 @font-face {
 	font-family: MLT;
-	src: url('../font/mlt-latest.otf') format('true');
+	src: url('../font/mlt-latest.otf') format('truetype');
 }
 
 * {
