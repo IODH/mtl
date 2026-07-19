@@ -350,6 +350,21 @@ function replaceTo(str) {
 		.replaceAll('Зж', 'Ꚅ')
 		.replaceAll('зж', 'ꚅ')
 
+		.replaceAll('Ое', 'Œ')
+		.replaceAll('ое', 'œ')
+
+		.replaceAll('Оє', 'Ө')
+		.replaceAll('оє', 'ө')
+
+		.replaceAll('Ює', 'Ӫ')
+		.replaceAll('ює', 'ӫ')
+
+		.replaceAll('Юе', 'Ө̄')
+		.replaceAll('юе', 'ө̄')
+
+		.replaceAll('Оєв', 'Ө̆')
+		.replaceAll('оєв', 'ө̆')
+
 		.replaceAll('Елв', 'Э̆л')
 		.replaceAll('елв', 'э̆л')
 
@@ -370,21 +385,6 @@ function replaceTo(str) {
 
 		.replaceAll('Яя', 'Я̄')
 		.replaceAll('яя', 'я̄')
-
-		.replaceAll('Ое', 'Œ')
-		.replaceAll('ое', 'œ')
-
-		.replaceAll('Оє', 'Ө')
-		.replaceAll('оє', 'ө')
-
-		.replaceAll('Ює', 'Ӫ')
-		.replaceAll('ює', 'ӫ')
-
-		.replaceAll('Юе', 'Ө̄')
-		.replaceAll('юе', 'ө̄')
-
-		.replaceAll('Оєв', 'Ө̆')
-		.replaceAll('оєв', 'ө̆')
 
 		.replaceAll('Оя', 'Ɔ')
 		.replaceAll('оя', 'ɔ')
