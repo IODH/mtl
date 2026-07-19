@@ -639,7 +639,7 @@ function replaceTo(str) {
 
 		.replaceAll(/И[жшщ]/gu, (m) => '' + m[1])
 		.replaceAll(/и[жшщ]/gu, (m) => '' + m[1])
-		.replaceAll(/[ЖжШшЩщ]и/gu, (m) => '' + m[0])
+		.replaceAll(/[ЖжШшЩщ]и/gu, (m) => m[0] + '')
 
 		.replaceAll('Ій', 'Ꙇ')
 		.replaceAll('ій', 'ꙇ')
