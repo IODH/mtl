@@ -65,6 +65,8 @@ function replaceFrom(str) {
 
 		.replaceAll(/[ᵸҍꙏ]/gu, '')
 
+		.replaceAll(/[жчшкхгґщбпвмфБПВМФЩЖЧШКХГҐ]ї/gu, (m) => m[1] + 'і')
+
 		.replaceAll('Т̓', 'Тх')
 		.replaceAll('т̓', 'тх')
 
