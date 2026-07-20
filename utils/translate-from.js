@@ -361,8 +361,8 @@ function replaceFrom(str) {
 		.replaceAll(/[ꙪꚚѺꙨꙬѠѪꙌѼ]/gu, 'О')
 		.replaceAll(/[ꙫꚛѻꙩꙭѡѫꙍѽ]/gu, 'о')
 
-		.replaceAll(/(Ѩ|Ә̃)/gu, 'Я')
-		.replaceAll(/(ѩ|Ә̃)/gu, 'я')
+		.replaceAll('Ѩ', 'Я')
+		.replaceAll('ѩ', 'я')
 
 		.replaceAll(/[ѦӘ]/gu, 'А')
 		.replaceAll(/[ѧә]/gu, 'а')
